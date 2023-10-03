@@ -1,5 +1,7 @@
 # *high-Level Programming - Data Structures, Algorithms, Linux/Unix System Programming*
 
+![python image](https://www.analyticsinsight.net/wp-content/uploads/2020/06/Python1.png)
+
 ## *Description*
 This repository contains programs written for the low-level programming.
 
