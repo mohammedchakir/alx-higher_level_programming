@@ -1,9 +1,3 @@
 #!/usr/bin/python3
-
-start = ord('a')
-end = ord('z')
-
-for char_code in range(start, end + 1):
+for char_code in range(97, 123):
     print(chr(char_code), end='')
-
-print()
