@@ -10,4 +10,6 @@ elif last_digit == 0:
     message = "0"
 else:
     message = "less than 6 and not 0"
+if number < 0:
+    message = "negative " + message
 print(f"Last digit of {number} is {last_digit} and is {message}")
