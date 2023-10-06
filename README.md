@@ -3,7 +3,7 @@
 ![python image](https://www.analyticsinsight.net/wp-content/uploads/2020/06/Python1.png)
 
 ## *Description*
-This repository contains programs written for the low-level programming.
+This repository contains programs written for the high-level programming.
 
 ## *Structure:*
 
