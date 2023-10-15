@@ -4,7 +4,7 @@
 
 By: Guillaume
 
-![python image](https://cdn.filestackcontent.com/C9rfwOZR1aU5rvpBDlQ5)
+![python image](https://tech.dainikshodh.in/uploads/images/image_750x_5e011572f23e9.jpg)
 
 ## *Resources:*
 
