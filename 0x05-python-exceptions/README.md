@@ -4,7 +4,7 @@
 
 By: Guillaume
 
-![python image](https://tech.dainikshodh.in/uploads/images/image_750x_5e011572f23e9.jpg)
+![python image](https://codeofgeeks.com/wp-content/uploads/2023/07/image-41-1024x576.png)
 
 ## *Resources:*
 
