@@ -13,3 +13,4 @@ This repository contains programs written for the high-level programming.
 - [0x03. Python - Data Structures: Lists, Tuples](0x03-python-data_structures)
 - [0x04. Python - More Data Structures: Set, Dictionary](0x04-python-more_data_structures)
 - [0x05. Python - Exceptions](0x05-python-exceptions)
+- [0x06. Python - Classes and Objects](0x06-python_classes)
