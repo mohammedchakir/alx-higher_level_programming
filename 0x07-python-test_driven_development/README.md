@@ -158,7 +158,6 @@ s = "スプーンは存在しない"
 lib.print_python_string(s)
 s = b"The spoon does not exist"
 lib.print_python_string(s)
-julien@ubuntu:~/0x07. Pyhton Strings$ gcc -shared -Wl,-soname,libPython.so -o libPython.so -fPIC -I/usr/include/python3.4 102-python.c
 ```
 
 
