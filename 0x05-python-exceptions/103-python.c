@@ -64,10 +64,10 @@ void print_python_list(PyObject *p)
 	printf("[*] Python list info\n");
 	if (PyList_CheckExact(p))
 	{
-		size = PyList_GET_SIZE(p);
-		printf("[*] Size of the Python List = %zd\n", size);
+		s = PyList_GET_SIZE(p);
+		printf("[*] Size of the Python List = %zd\n", s);
 		printf("[*] Allocated = %lu\n", ((PyListObject *)p)->allocated);
-		while (i < size)
+		while (n < s)
 		{
 			groupe = PyList_GET_ITEM(p, n);
 			printf("Element %d: %s\n", n, groupe->ob_type->tp_name);
