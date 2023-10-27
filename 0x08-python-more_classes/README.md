@@ -48,13 +48,13 @@ Read or watch:
 
 ## *Tasks:*
 
-#### [0. Simple rectangle]()
+#### [0. Simple rectangle](0-rectangle.py)
 
 Write an empty class `Rectangle` that defines a rectangle:
 
 - You are not allowed to import any module
 
-#### [1. Real definition of a rectangle]()
+#### [1. Real definition of a rectangle](1-rectangle.py)
 
 Write a class `Rectangle` that defines a rectangle by: (based on `0-rectangle.py`)
 
@@ -71,7 +71,7 @@ Write a class `Rectangle` that defines a rectangle by: (based on `0-rectangle.py
 - Instantiation with optional width and height: `def __init__(self, width=0, height=0):`
 - You are not allowed to import any module
 
-#### [2. Area and Perimeter]()
+#### [2. Area and Perimeter](2-rectangle.py)
 
 Write a class `Rectangle` that defines a rectangle by: (based on `1-rectangle.py`)
 
@@ -91,7 +91,7 @@ Write a class `Rectangle` that defines a rectangle by: (based on `1-rectangle.py
    - if `width` or `height` is equal to `0`, perimeter is equal to `0`
 -You are not allowed to import any module
 
-#### [3. String representation]()
+#### [3. String representation](3-rectangle.py)
 
 Write a class `Rectangle` that defines a rectangle by: (based on `2-rectangle.py`)
 
@@ -113,7 +113,7 @@ Write a class `Rectangle` that defines a rectangle by: (based on `2-rectangle.py
    - if `width` or `height` is equal to 0, return an empty string
 - You are not allowed to import any module
 
-#### [4. Eval is magic]()
+#### [4. Eval is magic](4-rectangle.py)
 
 Write a class `Rectangle` that defines a rectangle by: (based on `3-rectangle.py`)
 
@@ -136,7 +136,7 @@ Write a class `Rectangle` that defines a rectangle by: (based on `3-rectangle.py
 - `repr()` should return a string representation of the rectangle to be able to recreate a new instance by using `eval()` (see example below)
 - You are not allowed to import any module
 
-#### [5. Detect instance deletion]()
+#### [5. Detect instance deletion](5-rectangle.py)
 
 Write a class Rectangle that defines a rectangle by: (based on 4-rectangle.py)
 
@@ -160,7 +160,7 @@ Write a class Rectangle that defines a rectangle by: (based on 4-rectangle.py)
 - Print the message `Bye rectangle...` (`...` being 3 dots not ellipsis) when an instance of `Rectangle` is deleted
 - You are not allowed to import any module
 
-#### [6. How many instances]()
+#### [6. How many instances](6-rectangle.py)
 
 Write a class `Rectangle` that defines a rectangle by: (based on `5-rectangle.py`)
 
@@ -188,7 +188,7 @@ Write a class `Rectangle` that defines a rectangle by: (based on `5-rectangle.py
 - Print the message `Bye rectangle...` (`...` being 3 dots not ellipsis) when an instance of Rectangle is deleted
 - You are not allowed to import any module
 
-#### [7. Change representation]()
+#### [7. Change representation](7-rectangle.py)
 
 Write a class `Rectangle` that defines a rectangle by: (based on `6-rectangle.py`)
 
@@ -220,7 +220,7 @@ Write a class `Rectangle` that defines a rectangle by: (based on `6-rectangle.py
 - Print the message `Bye rectangle...` (`...` being 3 dots not ellipsis) when an instance of Rectangle is deleted
 - You are not allowed to import any module
 
-#### [8. Compare rectangles]()
+#### [8. Compare rectangles](8-rectangle.py)
 
 Write a class `Rectangle` that defines a rectangle by: (based on `7-rectangle.py`)
 
@@ -256,7 +256,7 @@ Write a class `Rectangle` that defines a rectangle by: (based on `7-rectangle.py
    - Returns `rect_1` if both have the same area value
 - You are not allowed to import any module
 
-#### [9. A square is a rectangle]()
+#### [9. A square is a rectangle](9-rectangle.py)
 
 Write a class `Rectangle` that defines a rectangle by: (based on `8-rectangle.py`)
 
@@ -293,7 +293,7 @@ Write a class `Rectangle` that defines a rectangle by: (based on `8-rectangle.py
 - Class method `def square(cls, size=0):` that returns a new Rectangle instance with `width == height == size`
 - You are not allowed to import any module
 
-#### [10. N queens]()
+#### [10. N queens](101-nqueens.py)
 
 ![image](https://www.crestbook.com/files/Judit-photo1_602x433.jpg)
 
