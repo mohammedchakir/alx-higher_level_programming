@@ -15,7 +15,11 @@ class Base:
     __nb_objects = 0
 
     def __init__(self, id=None):
-        """ """
+        """Initialize a new Base.
+
+        Args:
+            id (int): The identity of the new Base.
+        """
         if id is not None:
             self.id = id
         else:
@@ -58,7 +62,6 @@ class Base:
     @classmethod
     def create(cls, **dictionary):
         """Returns an instance with all attributes already set"""
-        # create an instance of an existing class
         if cls.__name__ == 'Rectangle':
             dummy = cls(1, 1)
         elif cls.__name__ == 'Square':
