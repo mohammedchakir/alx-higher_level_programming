@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 """This module contains a rectangle class"""
 
 from models.base import Base
