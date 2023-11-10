@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 from contextlib import redirect_stdout
 import inspect
 import io
@@ -379,7 +380,7 @@ class test_rectangle(unittest.TestCase):
 
     def test_json_string_type(self):
         """
-        Testing the returned type
+            Testing the returned type
         """
             list_input = [
                 {'id': 2089, 'width': 10, 'height': 4},
@@ -531,6 +532,7 @@ class test_rectangle(unittest.TestCase):
         output = '###\n###\n###\n###\n###\n###\n###\n'
         self.assertEqual(capturedOutput.getvalue(), output)
 
+
 class TestRectangle(unittest.TestCase):
     """
     class for testing Rectangle class' methods
@@ -543,7 +545,6 @@ class TestRectangle(unittest.TestCase):
         """
         cls.setup = inspect.getmembers(Rectangle, inspect.isfunction)
 
-    
     def test_module_docstring(self):
         """
         Tests if module docstring documentation exist
@@ -674,6 +675,7 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(R_dict['x'], 300)
         self.assertEqual(R_dict['y'], 400)
         self.assertEqual(R_dict['id'], 500)
+
 
 class TestRectangle_instantiation(unittest.TestCase):
     """Unittests for testing instantiation of the Rectangle class."""
@@ -1190,7 +1192,7 @@ class TestRectangle_stdout(unittest.TestCase):
 
 class TestRectangle_update_args(unittest.TestCase):
     """Unittests for testing update args method of the Rectangle class."""
-    
+
     def test_update_args_zero(self):
         r = Rectangle(10, 10, 10, 10, 10)
         r.update()
@@ -1455,6 +1457,7 @@ class TestRectangle_to_dictionary(unittest.TestCase):
         r = Rectangle(10, 2, 4, 1, 2)
         with self.assertRaises(TypeError):
             r.to_dictionary(1)
+
 
 if __name__ == "__main__":
     unittest.main()
