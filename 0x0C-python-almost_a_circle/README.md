@@ -54,7 +54,7 @@ Read or watch:
 All your files, classes and methods must be unit tested and be PEP 8 validated.
 
 
-#### [1. Base class]()
+#### [1. Base class](base.py)
 
 Write the first class `Base`:
 
@@ -70,7 +70,7 @@ Create a file named `models/base.py`:
 This class will be the “base” of all other classes in this project. The goal of it is to manage `id` attribute in all your future classes and to avoid duplicating the same code (by extension, same bugs)
 
 
-#### [2. First Rectangle]()
+#### [2. First Rectangle](rectangle.py)
 
 Write the class `Rectangle` that inherits from `Base`:
 
@@ -108,7 +108,7 @@ Update the class `Rectangle` by adding the public method `def area(self):` that 
 Update the class `Rectangle` by adding the public method `def display(self):` that prints in stdout the `Rectangle` instance with the character `#` - you don’t need to handle `x` and `y` here.
 
 
-#### [6. __str__]()
+#### [6. __str__](__init__.py)
 
 Update the class `Rectangle` by overriding the `__str__` method so that it returns `[Rectangle] (<id>) <x>/<y> - <width>/<height>`
 
@@ -157,7 +157,7 @@ Write the class `Square` that inherits from `Rectangle`:
 As you know, a Square is a special Rectangle, so it makes sense this class Square inherits from Rectangle. Now you have a Square class who has the same attributes and same methods.
 
 
-#### [11. Square size]()
+#### [11. Square size](square.py)
 
 Update the class `Square` by adding the public getter and setter `size`
 
