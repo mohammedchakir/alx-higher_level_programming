@@ -180,7 +180,7 @@ Since we now know a bit of C, we can look at what is happening under the hood of
 
 - All your files will be interpreted/compiled on Ubuntu 14.04 LTS
 
-![GIF](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/7e7834b535261d05532fb80a9304f7051c4ad7ac.gif?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20231005%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231005T205636Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=41500e03d337380ecd0ad0ac641b494545e4c6316a5c2dd41992e4d6e0afdd7e)
+![7e7834b535261d05532fb80a9304f7051c4ad7ac](https://github.com/mohammedchakir/alx-system_engineering-devops/assets/129831433/495c421b-e19d-4140-ad96-19544745e689)
 
 Create a C function that prints some basic info about Python lists.
 
