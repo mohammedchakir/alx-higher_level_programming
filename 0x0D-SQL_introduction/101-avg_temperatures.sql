@@ -1,5 +1,6 @@
--- This SQL script calculates and displays the average temperature by city, ordered by temperature in descending order.
-SELECT city, AVG(temperature) AS avg_temp
-FROM temperature_data -- Replace 'temperature_data' with the actual table name
+-- SQL script to calculate and display the average temperature by city
+-- This script should be executed in the MySQL environment
+SELECT city, AVG(value) AS avg_temp
+FROM temperatures
 GROUP BY city
 ORDER BY avg_temp DESC;
