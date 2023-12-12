@@ -295,7 +295,7 @@ Write a class `Rectangle` that defines a rectangle by: (based on `8-rectangle.py
 
 #### [10. N queens](101-nqueens.py)
 
-![2c4f2b92514745519f833afdf5bc5f3eaff8c6ca](https://github.com/mohammedchakir/alx-system_engineering-devops/assets/129831433/944fa8e2-406c-46ae-856b-9ca5da402ec3)
+![image](https://www.crestbook.com/files/Judit-photo1_602x433.jpg)
 
 The N queens puzzle is the challenge of placing N non-attacking queens on an N×N chessboard. Write a program that solves the N queens problem.
 
