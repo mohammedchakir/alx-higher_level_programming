@@ -125,7 +125,7 @@ To install it: `pip3 install numpy==1.15.0`
 
 #### [8. CPython #3: Python Strings](102-python.c)
 
-![4p9p4o](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/2c4f2b92514745519f833afdf5bc5f3eaff8c6ca.gif?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20231023%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231023T072938Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=c4a46eb5a4fe461398da216a271920dc5b117af52296883489176273b0df2f93)
+![2c4f2b92514745519f833afdf5bc5f3eaff8c6ca](https://github.com/mohammedchakir/alx-system_engineering-devops/assets/129831433/944fa8e2-406c-46ae-856b-9ca5da402ec3)
 
 Create a function that prints Python strings.
 
