@@ -198,6 +198,8 @@ Write the Python function `def magic_calculation(a, b):` that does exactly the s
 
 #### [10. CPython #2: PyFloatObject](103-python.c)
 
+![070710952984e4d126e114405cefe83af2271ce8](https://github.com/mohammedchakir/alx-system_engineering-devops/assets/129831433/fc737a97-ad95-405f-9916-733d25c6e718)
+
 Create three C functions that print some basic info about Python lists, Python bytes an Python float objects.
 
 Python lists:
