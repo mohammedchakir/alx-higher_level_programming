@@ -6,8 +6,8 @@ By Guillaume
 
 For this project, students are expected to look at these concepts:
 
-- [Databases]()
-- [Databases]()
+- [Databases](https://intranet.alxswe.com/concepts/37)
+- [Databases](https://intranet.alxswe.com/concepts/556)
 
 ![image](https://camo.githubusercontent.com/ab1722adfc45ef82987fc0c06fc37296effb7694d38117a6ed9ccd593bc1cbde/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f696e7472616e65742d70726f6a656374732d66696c65732f686f6c626572746f6e7363686f6f6c2d6869676865722d6c6576656c5f70726f6772616d6d696e672b2f3237322f727463777a2e6a7067)
 
@@ -16,14 +16,15 @@ For this project, students are expected to look at these concepts:
 Read or watch:
 
 - [What is Database & SQL?](https://www.youtube.com/watch?v=FR4QIeZaPeM)
-- [A Basic MySQL Tutorial]()
-- [Basic SQL statements: DDL and DML (no need to read the chapter "Privileges")
-- [Basic queries: SQL and RA
-- [SQL technique: functions
-- [SQL technique: subqueries
-- [What makes the big difference between a backtick and an apostrophe?
-- [MySQL Cheat Sheet
-- [MySQL 8.0 SQL Statement Syntax
+- [A Basic MySQL Tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04)
+- [Basic SQL statements: DDL and DML](https://web.csulb.edu/colleges/coe/cecs/dbdesign/dbdesign.php?page=sql/ddldml.php) (no need to read the chapter "Privileges")
+- [Basic queries: SQL and RA](https://web.csulb.edu/colleges/coe/cecs/dbdesign/dbdesign.php?page=sql/queries.php)
+- [SQL technique: functions](https://web.csulb.edu/colleges/coe/cecs/dbdesign/dbdesign.php?page=sql/functions.php)
+- [SQL technique: subqueries](https://web.csulb.edu/colleges/coe/cecs/dbdesign/dbdesign.php?page=sql/subqueries.php)
+- [What makes the big difference between a backtick and an apostrophe?](https://stackoverflow.com/questions/29402361/what-makes-the-big-difference-between-a-backtick-and-an-apostrophe/29402458)
+- [MySQL Cheat Sheet](https://intellipaat.com/mediaFiles/2019/02/SQL-Commands-Cheat-Sheet.pdf?US)
+- [MySQL 8.0 SQL Statement Syntax](https://dev.mysql.com/doc/refman/8.0/en/sql-statements.html)
+- [installing MySQL in Ubuntu 20.04](https://phoenixnap.com/kb/install-mysql-ubuntu-20-04)
 
 ## *General:*
 
@@ -33,15 +34,15 @@ Read or watch:
 - What's MySQL
 - How to create a database in MySQL
 - What does `DDL` and `DML` stand for
-- How to `CREATE` or ALTER a table
+- How to `CREATE` or `ALTER` a table
 - How to `SELECT` data from a table
 - How to `INSERT`, `UPDATE` or `DELETE` data
-- What are subqueries
+- What are `subqueries`
 - How to use MySQL functions
 
 ## *Tasks:*
 
-#### [0. List databases]()
+#### [0. List databases](0-list_databases.sql)
 
 Write a script that lists all databases of your MySQL server.
 
@@ -57,7 +58,7 @@ sys
 guillaume@ubuntu:~/$
 ```
 
-#### [1. Create a database]()
+#### [1. Create a database](1-create_database_if_missing.sql)
 
 Write a script that creates the database `hbtn_0c_0` in your MySQL server.
 
@@ -78,7 +79,7 @@ Enter password:
 guillaume@ubuntu:~/$
 ```
 
-#### [2. Delete a database]()
+#### [2. Delete a database](2-remove_database.sql)
 
 Write a script that deletes the database `hbtn_0c_0` in your MySQL server.
 
@@ -105,7 +106,7 @@ sys
 guillaume@ubuntu:~/$
 ```
 
-#### [3. List tables]()
+#### [3. List tables](3-list_tables.sql)
 
 Write a script that lists all the tables of a database in your MySQL server.
 
@@ -152,7 +153,7 @@ user
 guillaume@ubuntu:~/$
 ```
 
-#### [4. First table]()
+#### [4. First table](4-first_table.sql)
 
 Write a script that creates a table called `first_table` in the current database in your MySQL server.
 
@@ -173,7 +174,7 @@ first_table
 guillaume@ubuntu:~/$
 ```
 
-#### [5. Full description]()
+#### [5. Full description](5-full_table.sql)
 
 Write a script that prints the full description of the table `first_table` from the database `hbtn_0c_0` in your MySQL server.
 
@@ -187,7 +188,7 @@ first_table     CREATE TABLE `first_table` (\n  `id` int DEFAULT NULL,\n  `name`
 guillaume@ubuntu:~/$
 ```
 
-#### [6. List all in table]()
+#### [6. List all in table](6-list_values.sql)
 
 Write a script that lists all rows of the table `first_table` from the database `hbtn_0c_0` in your MySQL server.
 
@@ -200,7 +201,7 @@ Enter password:
 guillaume@ubuntu:~/$
 ```
 
-#### [7. First add]()
+#### [7. First add](7-insert_value.sql)
 
 Write a script that inserts a new row in the table `first_table` (database `hbtn_0c_0`) in your MySQL server.
 
@@ -228,7 +229,7 @@ id  name
 guillaume@ubuntu:~/$
 ```
 
-#### [8. Count 89]()
+#### [8. Count 89](8-count_89.sql)
 
 Write a script that displays the number of records with `id = 89` in the table `first_table` of the database `hbtn_0c_0` in your MySQL server.
 
@@ -240,7 +241,7 @@ Enter password:
 guillaume@ubuntu:~/$
 ```
 
-#### [9. Full creation]()
+#### [9. Full creation](9-full_creation.sql)
 
 Write a script that creates a table `second_table` in the database `hbtn_0c_0` in your MySQL server and add multiples rows.
 
@@ -262,7 +263,7 @@ Enter password:
 guillaume@ubuntu:~/$
 ```
 
-#### [10. List by best]()
+#### [10. List by best](10-top_score.sql)
 
 Write a script that lists all records of the table `second_table` of the database hbtn_0c_0 in your `MySQL` server.
 
@@ -280,7 +281,7 @@ score   name
 guillaume@ubuntu:~/$
 ```
 
-#### [11. Select the best]()
+#### [11. Select the best](11-best_score.sql)
 
 Write a script that lists all records with a `score >= 10` in the table `second_table` of the database `hbtn_0c_0` in your MySQL server.
 
@@ -296,7 +297,7 @@ score   name
 guillaume@ubuntu:~/$
 ```
 
-#### [12. Cheating is bad]()
+#### [12. Cheating is bad](12-no_cheating.sql)
 
 Write a script that updates the score of Bob to `10` in the table `second_table`.
 
@@ -315,7 +316,7 @@ score   name
 guillaume@ubuntu:~/$
 ```
 
-#### [13. Score too low]()
+#### [13. Score too low](13-change_class.sql)
 
 Write a script that removes all records with a `score <= 5` in the table `second_table` of the database `hbtn_0c_0` in your MySQL server.
 
@@ -332,7 +333,7 @@ score   name
 guillaume@ubuntu:~/$
 ```
 
-#### [14. Average]()
+#### [14. Average](14-average.sql)
 
 Write a script that computes the score average of all records in the table `second_table` of the database `hbtn_0c_0` in your MySQL server.
 
@@ -346,7 +347,7 @@ average
 guillaume@ubuntu:~/$
 ```
 
-#### [15. Number by score]()
+#### [15. Number by score](15-groups.sql)
 
 Write a script that lists the number of records with the same score in the table `second_table` of the database `hbtn_0c_0` in your MySQL server.
 
@@ -365,7 +366,7 @@ guillaume@ubuntu:~/$
 ````
 
 
-#### [16. Say my name]()
+#### [16. Say my name](16-no_link.sql)
 
 Write a script that lists all records of the table `second_table` of the database `hbtn_0c_0` in your MySQL server.
 
@@ -386,7 +387,7 @@ score   name
 guillaume@ubuntu:~/$
 ```
 
-#### [17. Go to UTF8]()
+#### [17. Go to UTF8](100-move_to_utf8.sql)
 
 Write a script that converts `hbtn_0c_0` database to UTF8 (`utf8mb4`, collate `utf8mb4_unicode_ci`) in your MySQL server.
 
@@ -405,7 +406,7 @@ first_table CREATE TABLE `first_table` (\n  `id` int(11) DEFAULT NULL,\n  `name`
 guillaume@ubuntu:~/$
 ```
 
-#### [18. Temperatures #0]()
+#### [18. Temperatures #0](101-avg_temperatures.sql)
 
 Import in `hbtn_0c_0` database this table dump: [download]()
 
@@ -436,7 +437,7 @@ Peoria  66.5392
 guillaume@ubuntu:~/$
 ```
 
-#### [19. Temperatures #1]()
+#### [19. Temperatures #1](102-top_city.sql)
 
 Import in `hbtn_0c_0` database this table dump: [download]() (same as `Temperatures #0`)
 
@@ -451,7 +452,7 @@ Sunnyvale   73.2353
 guillaume@ubuntu:~/$
 ```
 
-#### [20. Temperatures #2]()
+#### [20. Temperatures #2](103-max_state.sql)
 
 Import in `hbtn_0c_0` database this table dump: [download]() (same as `Temperatures #0`)
 
