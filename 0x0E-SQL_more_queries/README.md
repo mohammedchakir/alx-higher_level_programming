@@ -128,12 +128,12 @@ $
 
 ## *Tasks:*
 
-#### [0. My privileges!]()
+#### [0. My privileges!](0-privileges.sql)
 
 Write a script that lists all privileges of the MySQL users `user_0d_1` and `user_0d_2` on your server (in `localhost`).
 
 
-#### [1. Root user]()
+#### [1. Root user](1-create_user.sql)
 
 Write a script that creates the MySQL server user `user_0d_1`.
 
@@ -142,7 +142,7 @@ Write a script that creates the MySQL server user `user_0d_1`.
 0 If the user `user_0d_1` already exists, your script should not fail
 
 
-#### [2. Read user]()
+#### [2. Read user](2-create_read_user.sql)
 
 Write a script that creates the database `hbtn_0d_2` and the user `user_0d_2`.
 
@@ -152,7 +152,7 @@ Write a script that creates the database `hbtn_0d_2` and the user `user_0d_2`.
 - If the user `user_0d_2` already exists, your script should not fail
 
 
-#### [3. Always a name]()
+#### [3. Always a name](3-force_name.sql)
 
 Write a script that creates the table `force_name` on your MySQL server.
 
@@ -163,7 +163,7 @@ Write a script that creates the table `force_name` on your MySQL server.
 - If the table `force_name` already exists, your script should not fail
 
 
-#### [4. ID can't be null]()
+#### [4. ID can't be null](4-never_empty.sql)
 
 Write a script that creates the table `id_not_null` on your MySQL server.
 
@@ -174,7 +174,7 @@ Write a script that creates the table `id_not_null` on your MySQL server.
 - If the table `id_not_null` already exists, your script should not fail
 
 
-#### [5. Unique ID]()
+#### [5. Unique ID](5-unique_id.sql)
 
 Write a script that creates the table `unique_id` on your MySQL server.
 
@@ -185,7 +185,7 @@ The database name will be passed as an argument of the `mysql` command
 If the table `unique_id` already exists, your script should not fail
 
 
-#### [6. States table]()
+#### [6. States table](6-states.sql)
 
 Write a script that creates the database `hbtn_0d_usa` and the table `states` (in the database `hbtn_0d_usa`) on your MySQL server.
 
@@ -196,7 +196,7 @@ Write a script that creates the database `hbtn_0d_usa` and the table `states` (i
 - If the table `states` already exists, your script should not fail
 
 
-#### [7. Cities table]()
+#### [7. Cities table](7-cities.sql)
 
 Write a script that creates the database `hbtn_0d_usa` and the table `cities` (in the database `hbtn_0d_usa`) on your MySQL server.
 
@@ -208,7 +208,7 @@ Write a script that creates the database `hbtn_0d_usa` and the table `cities` (i
 - If the table `cities` already exists, your script should not fail
 
 
-#### [8. Cities of California]()
+#### [8. Cities of California](8-cities_of_california_subquery.sql)
 
 Write a script that lists all the cities of California that can be found in the database` hbtn_0d_usa`.
 
@@ -218,7 +218,7 @@ Write a script that lists all the cities of California that can be found in the 
 - The database name will be passed as an argument of the `mysql` command
 
 
-#### [9. Cities by States]()
+#### [9. Cities by States](9-cities_by_state_join.sql)
 
 Write a script that lists all cities contained in the database `hbtn_0d_usa`.
 
@@ -228,7 +228,7 @@ Write a script that lists all cities contained in the database `hbtn_0d_usa`.
 - The database name will be passed as an argument of the `mysql` command
 
 
-#### [10. Genre ID by show]()
+#### [10. Genre ID by show](10-genre_id_by_show.sql)
 
 Import the database dump from `hbtn_0d_tvshows` to your MySQL server: [download](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/hbtn_0d_tvshows.sql)
 
@@ -240,7 +240,7 @@ Write a script that lists all shows contained in `hbtn_0d_tvshows` that have at 
 - The database name will be passed as an argument of the `mysql` command
 
 
-#### [11. Genre ID for all shows]()
+#### [11. Genre ID for all shows](11-genre_id_all_shows.sql)
 
 Import the database dump of `hbtn_0d_tvshows` to your MySQL server: [download](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/hbtn_0d_tvshows.sql) (same as `10-genre_id_by_show.sql`)
 
@@ -253,7 +253,7 @@ Write a script that lists all shows contained in the database `hbtn_0d_tvshows`.
 - The database name will be passed as an argument of the `mysql` command
 
 
-#### [12. No genre]()
+#### [12. No genre](12-no_genre.sql)
 
 Import the database dump from `hbtn_0d_tvshows` to your MySQL server: [download](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/hbtn_0d_tvshows.sql) (same as `11-genre_id_all_shows.sql`)
 
@@ -265,7 +265,7 @@ Write a script that lists all shows contained in `hbtn_0d_tvshows` without a gen
 - The database name will be passed as an argument of the `mysql` command
 
 
-#### [13. Number of shows by genre]()
+#### [13. Number of shows by genre](13-count_shows_by_genre.sql)
 
 Import the database dump from `hbtn_0d_tvshows` to your MySQL server: [download ](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/hbtn_0d_tvshows.sql)(same as `12-no_genre.sql`)
 
@@ -280,7 +280,7 @@ Write a script that lists all genres from `hbtn_0d_tvshows` and displays the num
 - The database name will be passed as an argument of the `mysql` command
 
 
-#### [14. My genres]()
+#### [14. My genres](14-my_genres.sql)
 
 Import the database dump from `hbtn_0d_tvshows` to your MySQL server: [download](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/hbtn_0d_tvshows.sql) (same as `13-count_shows_by_genre.sql`)
 
@@ -293,7 +293,7 @@ Write a script that uses the `hbtn_0d_tvshows` database to lists all genres of t
 - The database name will be passed as an argument of the `mysql` command
 
 
-#### [15. Only Comedy]()
+#### [15. Only Comedy](15-comedy_only.sql)
 
 Import the database dump from `hbtn_0d_tvshows` to your MySQL server: [download](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/hbtn_0d_tvshows.sql) (same as `14-my_genres.sql`)
 
@@ -306,7 +306,7 @@ Write a script that lists all Comedy shows in the database `hbtn_0d_tvshows`.
 - The database name will be passed as an argument of the `mysql` command
 
 
-#### [16. List shows and genres]()
+#### [16. List shows and genres](16-shows_by_genre.sql)
 
 Import the database dump from `hbtn_0d_tvshows` to your MySQL server: [download](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/hbtn_0d_tvshows.sql) (same as `15-comedy_only.sql`)
 
@@ -319,7 +319,7 @@ Write a script that lists all shows, and all genres linked to that show, from th
 - The database name will be passed as an argument of the `mysql` command
 
 
-#### [17. Not my genre]()
+#### [17. Not my genre](100-not_my_genres.sql)
 
 Import the database dump from `hbtn_0d_tvshows` to your MySQL server: [download](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/hbtn_0d_tvshows.sql) (same as `16-shows_by_genre.sql`)
 
@@ -332,7 +332,7 @@ Write a script that uses the `hbtn_0d_tvshows` database to list all genres not l
 - The database name will be passed as an argument of the `mysql` command
 
    
-#### [18. No Comedy tonight!]()
+#### [18. No Comedy tonight!](101-not_a_comedy.sql)
 
 Import the database dump from `hbtn_0d_tvshows` to your MySQL server: [download](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/hbtn_0d_tvshows.sql) (same as `100-not_my_genres.sql`)
 
@@ -345,7 +345,7 @@ Write a script that lists all shows without the genre `Comedy` in the database `
 - The database name will be passed as an argument of the `mysql` command
 
    
-#### [19. Rotten tomatoes]()
+#### [19. Rotten tomatoes](102-rating_shows.sql)
 
 Import the database `hbtn_0d_tvshows_rate` dump to your MySQL server: [download](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/hbtn_0d_tvshows_rate.sql)
 
@@ -357,7 +357,7 @@ Write a script that lists all shows from `hbtn_0d_tvshows_rate` by their rating.
 - The database name will be passed as an argument of the `mysql` command
 
    
-#### [20. Best genre]()
+#### [20. Best genre](103-rating_genres.sql)
 
 Import the database dump from `hbtn_0d_tvshows_rate` to your MySQL server: [download](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/hbtn_0d_tvshows_rate.sql) (same as `102-rating_shows.sql`)
 
