@@ -10,25 +10,25 @@ By Guillaume
 
 Read or watch:
 
-- [How To Create a New User and Grant Permissions in MySQL]()
-- [How To Use MySQL GRANT Statement To Grant Privileges To a User]()
-- [MySQL constraints]()
-- [SQL technique: subqueries]()
-- [Basic query operation: the join]()
-- [SQL technique: multiple joins and the distinct keyword]()
-- [SQL technique: join types]()
-- [SQL technique: union and minus]()
-- [MySQL Cheat Sheet]()
-- [The Seven Types of SQL Joins]()
-- [MySQL Tutorial]()
-- [SQL Style Guide]()
-- [MySQL 8.0 SQL Statement Syntax]()
+- [How To Create a New User and Grant Permissions in MySQL](https://www.digitalocean.com/community/tutorials/how-to-create-a-new-user-and-grant-permissions-in-mysql)
+- [How To Use MySQL GRANT Statement To Grant Privileges To a User](https://www.mysqltutorial.org/mysql-grant.aspx)
+- [MySQL constraints](https://zetcode.com/mysql/constraints/)
+- [SQL technique: subqueries](https://web.csulb.edu/colleges/coe/cecs/dbdesign/dbdesign.php?page=sql/subqueries.php)
+- [Basic query operation: the join](https://web.csulb.edu/colleges/coe/cecs/dbdesign/dbdesign.php?page=sql/join.php)
+- [SQL technique: multiple joins and the distinct keyword](https://web.csulb.edu/colleges/coe/cecs/dbdesign/dbdesign.php?page=sql/multijoin.php)
+- [SQL technique: join types](https://web.csulb.edu/colleges/coe/cecs/dbdesign/dbdesign.php?page=sql/jointypes.php)
+- [SQL technique: union and minus](https://web.csulb.edu/colleges/coe/cecs/dbdesign/dbdesign.php?page=sql/setops.php)
+- [MySQL Cheat Sheet](https://intellipaat.com/mediaFiles/2019/02/SQL-Commands-Cheat-Sheet.pdf?US)
+- [The Seven Types of SQL Joins](https://tableplus.com/blog/2018/09/a-beginners-guide-to-seven-types-of-sql-joins.html)
+- [MySQL Tutorial](https://www.youtube.com/watch?v=yPu6qV5byu4)
+- [SQL Style Guide](https://www.sqlstyle.guide/)
+- [MySQL 8.0 SQL Statement Syntax](https://dev.mysql.com/doc/refman/8.0/en/sql-statements.html)
 
 Extra resources around relational database model design:
 
-- [Design]()
-- [Normalization]()
-- [ER Modeling]()
+- [Design](https://www.guru99.com/database-design.html)
+- [Normalization](https://www.guru99.com/database-normalization.html)
+- [ER Modeling](https://www.guru99.com/er-modeling.html)
 
 ## *General:*
 
@@ -40,6 +40,91 @@ Extra resources around relational database model design:
 - How to retrieve datas from multiple tables in one request
 - What are `subqueries`
 - What are `JOIN` and `UNION`
+
+## *More Info:*
+
+ ### Comments for your SQL file:
+```
+$ cat my_script.sql
+-- 3 first students in the Batch ID=3
+-- because Batch 3 is the best!
+SELECT id, name FROM students WHERE batch_id = 3 ORDER BY created_at DESC LIMIT 3;
+$
+```
+
+### Install MySQL 8.0 on Ubuntu 20.04 LTS
+```
+$ sudo apt update
+$ sudo apt install mysql-server
+...
+$ mysql --version
+mysql  Ver 8.0.25-0ubuntu0.20.04.1 for Linux on x86_64 ((Ubuntu))
+$
+```
+
+### Connect to your MySQL server:
+```
+$ sudo mysql
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 11
+Server version: 8.0.25-0ubuntu0.20.04.1 (Ubuntu)
+
+Copyright (c) 2000, 2021, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql>
+mysql> quit
+Bye
+$
+```
+
+### Use “container-on-demand” to run MySQL
+In the container, credentials are `root/root`
+
+- Ask for container `Ubuntu 20.04`
+- Connect via SSH
+- OR connect via the Web terminal
+In the container, you should start MySQL before playing with it:
+```
+$ service mysql start                                                   
+ * Starting MySQL database server mysqld 
+$
+$ cat 0-list_databases.sql | mysql -uroot -p                               
+Database                                                                                   
+information_schema                                                                         
+mysql                                                                                      
+performance_schema                                                                         
+sys                      
+$
+```
+In the container, credentials are `root/root`
+
+### How to import a SQL dump
+```
+$ echo "CREATE DATABASE hbtn_0d_tvshows;" | mysql -uroot -p
+Enter password: 
+$ curl "https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/hbtn_0d_tvshows.sql" -s | mysql -uroot -p hbtn_0d_tvshows
+Enter password: 
+$ echo "SELECT * FROM tv_genres" | mysql -uroot -p hbtn_0d_tvshows
+Enter password: 
+id  name
+1   Drama
+2   Mystery
+3   Adventure
+4   Fantasy
+5   Comedy
+6   Crime
+7   Suspense
+8   Thriller
+$
+```
+
+![bc2575fee3303b731031](https://github.com/mohammedchakir/alx-higher_level_programming/assets/129831433/d518ca68-fa00-4c80-b9d1-df685d5b51c7)
 
 ## *Tasks:*
 
@@ -145,7 +230,7 @@ Write a script that lists all cities contained in the database `hbtn_0d_usa`.
 
 #### [10. Genre ID by show]()
 
-Import the database dump from `hbtn_0d_tvshows` to your MySQL server: [download]()
+Import the database dump from `hbtn_0d_tvshows` to your MySQL server: [download](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/hbtn_0d_tvshows.sql)
 
 Write a script that lists all shows contained in `hbtn_0d_tvshows` that have at least one genre linked.
 
@@ -157,7 +242,7 @@ Write a script that lists all shows contained in `hbtn_0d_tvshows` that have at 
 
 #### [11. Genre ID for all shows]()
 
-Import the database dump of `hbtn_0d_tvshows` to your MySQL server: [download]() (same as `10-genre_id_by_show.sql`)
+Import the database dump of `hbtn_0d_tvshows` to your MySQL server: [download](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/hbtn_0d_tvshows.sql) (same as `10-genre_id_by_show.sql`)
 
 Write a script that lists all shows contained in the database `hbtn_0d_tvshows`.
 
@@ -170,7 +255,7 @@ Write a script that lists all shows contained in the database `hbtn_0d_tvshows`.
 
 #### [12. No genre]()
 
-Import the database dump from `hbtn_0d_tvshows` to your MySQL server: [download]() (same as `11-genre_id_all_shows.sql`)
+Import the database dump from `hbtn_0d_tvshows` to your MySQL server: [download](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/hbtn_0d_tvshows.sql) (same as `11-genre_id_all_shows.sql`)
 
 Write a script that lists all shows contained in `hbtn_0d_tvshows` without a genre linked.
 
@@ -182,7 +267,7 @@ Write a script that lists all shows contained in `hbtn_0d_tvshows` without a gen
 
 #### [13. Number of shows by genre]()
 
-Import the database dump from `hbtn_0d_tvshows` to your MySQL server: [download ]()(same as `12-no_genre.sql`)
+Import the database dump from `hbtn_0d_tvshows` to your MySQL server: [download ](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/hbtn_0d_tvshows.sql)(same as `12-no_genre.sql`)
 
 Write a script that lists all genres from `hbtn_0d_tvshows` and displays the number of shows linked to each.
 
@@ -197,7 +282,7 @@ Write a script that lists all genres from `hbtn_0d_tvshows` and displays the num
 
 #### [14. My genres]()
 
-Import the database dump from `hbtn_0d_tvshows` to your MySQL server: [download]() (same as `13-count_shows_by_genre.sql`)
+Import the database dump from `hbtn_0d_tvshows` to your MySQL server: [download](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/hbtn_0d_tvshows.sql) (same as `13-count_shows_by_genre.sql`)
 
 Write a script that uses the `hbtn_0d_tvshows` database to lists all genres of the show `Dexter`.
 
@@ -210,7 +295,7 @@ Write a script that uses the `hbtn_0d_tvshows` database to lists all genres of t
 
 #### [15. Only Comedy]()
 
-Import the database dump from `hbtn_0d_tvshows` to your MySQL server: [download]() (same as `14-my_genres.sql`)
+Import the database dump from `hbtn_0d_tvshows` to your MySQL server: [download](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/hbtn_0d_tvshows.sql) (same as `14-my_genres.sql`)
 
 Write a script that lists all Comedy shows in the database `hbtn_0d_tvshows`.
 
@@ -223,7 +308,7 @@ Write a script that lists all Comedy shows in the database `hbtn_0d_tvshows`.
 
 #### [16. List shows and genres]()
 
-Import the database dump from `hbtn_0d_tvshows` to your MySQL server: [download]() (same as `15-comedy_only.sql`)
+Import the database dump from `hbtn_0d_tvshows` to your MySQL server: [download](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/hbtn_0d_tvshows.sql) (same as `15-comedy_only.sql`)
 
 Write a script that lists all shows, and all genres linked to that show, from the database `hbtn_0d_tvshows`.
 
@@ -234,3 +319,51 @@ Write a script that lists all shows, and all genres linked to that show, from th
 - The database name will be passed as an argument of the `mysql` command
 
 
+#### [17. Not my genre]()
+
+Import the database dump from `hbtn_0d_tvshows` to your MySQL server: [download](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/hbtn_0d_tvshows.sql) (same as `16-shows_by_genre.sql`)
+
+Write a script that uses the `hbtn_0d_tvshows` database to list all genres not linked to the show Dexter
+
+- The `tv_shows` table contains only one record where `title` = `Dexter` (but the `id` can be different)
+- Each record should display: `tv_genres.name`
+- Results must be sorted in ascending order by the genre name
+- You can use a maximum of two `SELECT` statement
+- The database name will be passed as an argument of the `mysql` command
+
+   
+#### [18. No Comedy tonight!]()
+
+Import the database dump from `hbtn_0d_tvshows` to your MySQL server: [download](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/hbtn_0d_tvshows.sql) (same as `100-not_my_genres.sql`)
+
+Write a script that lists all shows without the genre `Comedy` in the database `hbtn_0d_tvshows`.
+
+- The `tv_genres` table contains only one record where `name` = `Comedy` (but the `id` can be different)
+- Each record should display: `tv_shows.title`
+- Results must be sorted in ascending order by the show title
+- You can use a maximum of two `SELECT` statement
+- The database name will be passed as an argument of the `mysql` command
+
+   
+#### [19. Rotten tomatoes]()
+
+Import the database `hbtn_0d_tvshows_rate` dump to your MySQL server: [download](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/hbtn_0d_tvshows_rate.sql)
+
+Write a script that lists all shows from `hbtn_0d_tvshows_rate` by their rating.
+
+- Each record should display: `tv_shows.title` - `rating sum`
+- Results must be sorted in descending order by the rating
+- You can use only one `SELECT` statement
+- The database name will be passed as an argument of the `mysql` command
+
+   
+#### [20. Best genre]()
+
+Import the database dump from `hbtn_0d_tvshows_rate` to your MySQL server: [download](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/hbtn_0d_tvshows_rate.sql) (same as `102-rating_shows.sql`)
+
+Write a script that lists all genres in the database `hbtn_0d_tvshows_rate` by their rating.
+
+- Each record should display: `tv_genres.name` - `rating sum`
+- Results must be sorted in descending order by their rating
+- You can use only one `SELECT` statement
+- The database name will be passed as an argument of the `mysql` command
