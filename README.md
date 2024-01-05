@@ -23,3 +23,4 @@ This repository contains programs written for the high-level programming.
 - [0x00. AirBnB clone - The console](https://github.com/mohammedchakir/AirBnB_clone)
 - [0x0D. SQL - Introduction](0x0D-SQL_introduction)
 - [0x0E. SQL - More queries](0x0E-SQL_more_queries)
+- [0x12. JavaScript - Warm up](0x12-javascript-warm_up)
