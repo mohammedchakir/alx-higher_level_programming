@@ -2,7 +2,7 @@
 
 By Guillaume
 
-
+![DALL·E 2024-01-07 00 40 27 - A conceptual illustration representing JavaScript scopes and closures  The image should depict an abstract, digital landscape symbolizing a coding env](https://github.com/mohammedchakir/alx-higher_level_programming/assets/129831433/e6551742-52d1-4940-9527-8579d0abc1fc)
 
 
 ## *Resources:*
