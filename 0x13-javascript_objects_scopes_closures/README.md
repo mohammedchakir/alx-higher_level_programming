@@ -1,31 +1,26 @@
-0x13. JavaScript - Objects, Scopes and Closures
-===============================================
+## *0x13. JavaScript - Objects, Scopes and Closures*
 
--   By Guillaume
--   Weight: 1
+By Guillaume
 
-Resources
----------
 
-**Read or watch**:
 
--   [JavaScript object basics](https://alx-intranet.hbtn.io/rltoken/dsSkBB-Cj0tqUFL8eOZLLQ "JavaScript object basics")
--   [Object-oriented JavaScript](https://alx-intranet.hbtn.io/rltoken/qqgqdyHPzUZkKQ5UMnw2MQ "Object-oriented JavaScript") (***read all examples!***)
--   [Class - ES6](https://alx-intranet.hbtn.io/rltoken/NEm-UViCThD5hfq_3Lj9Hg "Class - ES6")
--   [super - ES6](https://alx-intranet.hbtn.io/rltoken/_cxdVKsdqPWbbp2cHtQSbQ "super - ES6")
--   [extends - ES6](https://alx-intranet.hbtn.io/rltoken/6wdl6Bc5yjBplpiZKmr6Zw "extends - ES6")
--   [Object prototypes](https://alx-intranet.hbtn.io/rltoken/NiBbDiOlfhfUf4eIigglIw "Object prototypes")
--   [Inheritance in JavaScript](https://alx-intranet.hbtn.io/rltoken/qqgqdyHPzUZkKQ5UMnw2MQ "Inheritance in JavaScript")
--   [Closures](https://alx-intranet.hbtn.io/rltoken/CybTMKEDNdTdU99kx_OXgQ "Closures")
--   [this/self](https://alx-intranet.hbtn.io/rltoken/XcOkisoKPud4faDDkLMABw "this/self")
--   [Modern JS](https://alx-intranet.hbtn.io/rltoken/rU_q2J3qGWfvTYNllW8JnA "Modern JS")
 
-Learning Objectives
--------------------
+## *Resources:*
+Read or watch:
 
-At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/Eo6JxX0bkDywq4IxT8wRew "explain to anyone"), **without the help of Google**:
+-   [JavaScript object basics]()
+-   [Object-oriented JavaScript]() (***read all examples!***)
+-   [Class - ES6]()
+-   [super - ES6]()
+-   [extends - ES6]()
+-   [Object prototypes]()
+-   [Inheritance in JavaScript]()
+-   [Closures]()
+-   [this/self]()
+-   [Modern JS]()
 
-### General
+
+## *General:*
 
 -   Why JavaScript programming is amazing
 -   How to create an object in JavaScript
@@ -36,52 +31,11 @@ At the end of this project, you are expected to be able to [explain to anyone](
 -   What is a prototype
 -   How to inherit an object from another
 
-Requirements
-------------
 
-### General
+## *Tasks:*
 
--   Allowed editors: `vi`, `vim`, `emacs`
--   All your files will be interpreted on Ubuntu 20.04 LTS using node (version 14.x)
--   All your files should end with a new line
--   The first line of all your files should be exactly `#!/usr/bin/node`
--   A `README.md` file, at the root of the folder of the project, is mandatory
--   Your code should be `semistandard` compliant. [Rules of Standard](https://alx-intranet.hbtn.io/rltoken/CAKkGG6pUDtpu3T2rn4MXw "Rules of Standard") + [semicolons on top](https://alx-intranet.hbtn.io/rltoken/oc1-9XTUtCiIyZkdAFvoUQ "semicolons on top"). Also as reference: [AirBnB style](https://alx-intranet.hbtn.io/rltoken/JvqqQQrEPtGjP-57CZSEaQ "AirBnB style")
--   All your files must be executable
--   The length of your files will be tested using `wc`
--   You are not allowed to use `var`
 
-More Info
----------
-
-### Install Node 14
-
-```
-$ curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
-$ sudo apt-get install -y nodejs
-
-```
-
-### Install semi-standard
-
-[Documentation](https://alx-intranet.hbtn.io/rltoken/oc1-9XTUtCiIyZkdAFvoUQ "Documentation")
-
-```
-$ sudo npm install semistandard --global
-
-```
-
-Quiz questions
---------------
-
-Show
-
-Tasks
------
-
-### 0\. Rectangle #0
-
-mandatory
+#### [0. Rectangle #0]()
 
 Write an empty class `Rectangle` that defines a rectangle:
 
@@ -103,17 +57,7 @@ guillaume@ubuntu:~/0x13$
 
 ```
 
-**Repo:**
-
--   GitHub repository: `alx-higher_level_programming`
--   Directory: `0x13-javascript_objects_scopes_closures`
--   File: `0-rectangle.js`
-
- Done? Help Check your code Get a sandbox
-
-### 1\. Rectangle #1
-
-mandatory
+#### [1. Rectangle #1]()
 
 Write a class `Rectangle` that defines a rectangle:
 
@@ -156,17 +100,7 @@ guillaume@ubuntu:~/0x13$
 
 ```
 
-**Repo:**
-
--   GitHub repository: `alx-higher_level_programming`
--   Directory: `0x13-javascript_objects_scopes_closures`
--   File: `1-rectangle.js`
-
- Done? Help Check your code Get a sandbox
-
-### 2\. Rectangle #2
-
-mandatory
+#### [2. Rectangle #2]()
 
 Write a class `Rectangle` that defines a rectangle:
 
@@ -218,17 +152,8 @@ guillaume@ubuntu:~/0x13$
 
 ```
 
-**Repo:**
 
--   GitHub repository: `alx-higher_level_programming`
--   Directory: `0x13-javascript_objects_scopes_closures`
--   File: `2-rectangle.js`
-
- Done? Help Check your code Get a sandbox
-
-### 3\. Rectangle #3
-
-mandatory
+#### [3. Rectangle #3]()
 
 Write a class `Rectangle` that defines a rectangle:
 
@@ -263,17 +188,7 @@ guillaume@ubuntu:~/0x13$
 
 ```
 
-**Repo:**
-
--   GitHub repository: `alx-higher_level_programming`
--   Directory: `0x13-javascript_objects_scopes_closures`
--   File: `3-rectangle.js`
-
- Done? Help Check your code Get a sandbox
-
-### 4\. Rectangle #4
-
-mandatory
+#### [4. Rectangle #4]()
 
 Write a class `Rectangle` that defines a rectangle:
 
@@ -324,17 +239,7 @@ guillaume@ubuntu:~/0x13$
 
 ```
 
-**Repo:**
-
--   GitHub repository: `alx-higher_level_programming`
--   Directory: `0x13-javascript_objects_scopes_closures`
--   File: `4-rectangle.js`
-
- Done? Help Check your code Get a sandbox
-
-### 5\. Square #0
-
-mandatory
+#### [5. Square #0]()
 
 Write a class `Square` that defines a square and inherits from `Rectangle` of `4-rectangle.js`:
 
@@ -369,17 +274,7 @@ guillaume@ubuntu:~/0x13$
 
 ```
 
-**Repo:**
-
--   GitHub repository: `alx-higher_level_programming`
--   Directory: `0x13-javascript_objects_scopes_closures`
--   File: `5-square.js`
-
- Done? Help Check your code Get a sandbox
-
-### 6\. Square #1
-
-mandatory
+#### [6. Square #1]()
 
 Write a class `Square` that defines a square and inherits from `Square` of `5-square.js`:
 
@@ -410,17 +305,7 @@ guillaume@ubuntu:~/0x13$
 
 ```
 
-**Repo:**
-
--   GitHub repository: `alx-higher_level_programming`
--   Directory: `0x13-javascript_objects_scopes_closures`
--   File: `6-square.js`
-
- Done? Help Check your code Get a sandbox
-
-### 7\. Occurrences
-
-mandatory
+#### [7. Occurrences]()
 
 Write a function that returns the number of occurrences in a list:
 
@@ -443,17 +328,7 @@ guillaume@ubuntu:~/0x13$
 
 ```
 
-**Repo:**
-
--   GitHub repository: `alx-higher_level_programming`
--   Directory: `0x13-javascript_objects_scopes_closures`
--   File: `7-occurrences.js`
-
- Done? Help Check your code
-
-### 8\. Esrever
-
-mandatory
+#### [8. Esrever]()
 
 Write a function that returns the reversed version of a list:
 
@@ -475,17 +350,7 @@ guillaume@ubuntu:~/0x13$
 
 ```
 
-**Repo:**
-
--   GitHub repository: `alx-higher_level_programming`
--   Directory: `0x13-javascript_objects_scopes_closures`
--   File: `8-esrever.js`
-
- Done? Help Check your code Get a sandbox
-
-### 9\. Log me
-
-mandatory
+#### [9. Log me]()
 
 Write a function that prints the number of arguments already printed and the new argument value. (see example below)
 
@@ -509,17 +374,7 @@ guillaume@ubuntu:~/0x13$
 
 ```
 
-**Repo:**
-
--   GitHub repository: `alx-higher_level_programming`
--   Directory: `0x13-javascript_objects_scopes_closures`
--   File: `9-logme.js`
-
- Done? Help Check your code
-
-### 10\. Number conversion
-
-mandatory
+#### [10. Number conversion]()
 
 Write a function that converts a number from base 10 to another base passed as argument:
 
@@ -554,9 +409,3 @@ c
 guillaume@ubuntu:~/0x13$
 
 ```
-
-**Repo:**
-
--   GitHub repository: `alx-higher_level_programming`
--   Directory: `0x13-javascript_objects_scopes_closures`
--   File: `10-converter.js`
