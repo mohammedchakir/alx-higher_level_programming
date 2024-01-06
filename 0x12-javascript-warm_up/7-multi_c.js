@@ -3,13 +3,10 @@
 const args = process.argv.slice(2);
 const numberOfTimes = parseInt(args[0]);
 
-if (isNaN(numberOfTimes))
-{
+if (isNaN(numberOfTimes)) {
     console.log("Missing number of occurrences");
-} else
-{
-    for (let i = 0; i < numberOfTimes; i++)
-    {
+} else {
+    for (let i = 0; i < numberOfTimes; i++) {
         console.log("C is fun");
     }
 }

@@ -1,9 +1,7 @@
 #!/usr/bin/node
 
-function findSecondLargest(args)
-{
-    if (args.length <= 1)
-    {
+function findSecondLargest(args) {
+    if (args.length <= 1) {
         return 0;
     }
 
