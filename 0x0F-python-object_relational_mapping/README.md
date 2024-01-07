@@ -1,16 +1,14 @@
 0x0F. Python - Object-relational mapping
-========================================
 
--   By Guillaume
--   Weight: 1
+
+By Guillaume
 
 Before you start...
------------------
+
 
 **Please make sure your MySQL server is in 8.0** -> [How to install MySQL 8.0 in Ubuntu 20.04](https://alx-intranet.hbtn.io/rltoken/paGukker_0KoG3D9FqymNQ "How to install MySQL 8.0 in Ubuntu 20.04")
 
-Background Context
-------------------
+## *Background Context:*
 
 In this project, you will link two amazing worlds: Databases and Python!
 
@@ -47,16 +45,10 @@ session.close()
 
 ```
 
-Do you see the difference? Cool, right?
 
-The biggest difficulty with ORM is: The syntax!
+## *Resources:*
 
-Indeed, all of them have the same type of syntax, but not always. Please read tutorials and don't read the entire documentation before starting, just jump on it if you don't get something.
-
-Resources
----------
-
-**Read or watch**:
+Read or watch:
 
 -   [Object-relational mappers](https://alx-intranet.hbtn.io/rltoken/a8DUOWhXpNX3TEwgyT-U8A "Object-relational mappers")
 -   [mysqlclient/MySQLdb documentation](https://alx-intranet.hbtn.io/rltoken/JtFaKjnqxudr6Hi05Us1Lw "mysqlclient/MySQLdb documentation") (*please don't pay attention to `_mysql`*)
@@ -71,10 +63,6 @@ Resources
 -   [SQLAlchemy ORM Tutorial for Python Developers](https://alx-intranet.hbtn.io/rltoken/hNxBKC8lHge5XjsRO8ksHQ "SQLAlchemy ORM Tutorial for Python Developers") (***Warning:** This tutorial is with PostgreSQL, but the concept of SQLAlchemy is the same with MySQL*)
 -   [SQLAlchemy Tutorial](https://alx-intranet.hbtn.io/rltoken/5G_R2NmQRFqiZb84qxYERQ "SQLAlchemy Tutorial")
 
-Learning Objectives
--------------------
-
-At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/vPPdh3HKg3t23YFxUqHpFg "explain to anyone"), **without the help of Google**:
 
 ### General
 
@@ -85,29 +73,8 @@ At the end of this project, you are expected to be able to [explain to anyone](
 -   What ORM means
 -   How to map a Python Class to a MySQL table
 
-Requirements
-------------
 
-### General
-
--   Allowed editors: `vi`, `vim`, `emacs`
--   All your files will be interpreted/compiled on Ubuntu 20.04 LTS using `python3` (version 3.8.5)
--   Your files will be executed with `MySQLdb` version `2.0.x`
--   Your files will be executed with `SQLAlchemy` version `1.4.x`
--   All your files should end with a new line
--   The first line of all your files should be exactly `#!/usr/bin/python3`
--   A `README.md` file, at the root of the folder of the project, is mandatory
--   Your code should use the pycodestyle (version 2.7.*)
--   All your files must be executable
--   The length of your files will be tested using `wc`
--   All your modules should have a documentation (`python3 -c 'print(__import__("my_module").__doc__)'`)
--   All your classes should have a documentation (`python3 -c 'print(__import__("my_module").MyClass.__doc__)'`)
--   All your functions (inside and outside a class) should have a documentation (`python3 -c 'print(__import__("my_module").my_function.__doc__)'` and `python3 -c 'print(__import__("my_module").MyClass.my_function.__doc__)'`)
--   A documentation is not a simple word, it's a real sentence explaining what's the purpose of the module, class or method (the length of it will be verified)
--   You are not allowed to use `execute` with sqlalchemy
-
-More Info
----------
+## *More Info:*
 
 ### Install `MySQLdb` module version `2.0.x`
 
@@ -138,7 +105,7 @@ $ python3
 
 ```
 
-Also, you can have this warning message:
+Also, you can have this warning message, You can ignore it.
 
 ```
 /usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/default.py:552: Warning: (1681, "'@@SESSION.GTID_EXECUTED' is deprecated and will be re
@@ -147,14 +114,11 @@ moved in a future release.")
 
 ```
 
-You can ignore it.
 
-Tasks
------
+## *Tasks:*
 
-### 0\. Get all states
 
-mandatory
+#### [0. Get all states]()
 
 Write a script that lists all `states` from the database `hbtn_0e_0_usa`:
 
@@ -186,22 +150,11 @@ guillaume@ubuntu:~/0x0F$ ./0-select_states.py root root hbtn_0e_0_usa
 (4, 'New York')
 (5, 'Nevada')
 guillaume@ubuntu:~/0x0F$
-
 ```
-
 **No test cases needed**
 
-**Repo:**
 
--   GitHub repository: `alx-higher_level_programming`
--   Directory: `0x0F-python-object_relational_mapping`
--   File: `0-select_states.py`
-
- Done? Help Get a sandbox
-
-### 1\. Filter states
-
-mandatory
+#### [1. Filter states]()
 
 Write a script that lists all `states` with a `name` starting with `N` (upper N) from the database `hbtn_0e_0_usa`:
 
@@ -230,22 +183,11 @@ guillaume@ubuntu:~/0x0F$ ./1-filter_states.py root root hbtn_0e_0_usa
 (4, 'New York')
 (5, 'Nevada')
 guillaume@ubuntu:~/0x0F$
-
 ```
-
 **No test cases needed**
 
-**Repo:**
 
--   GitHub repository: `alx-higher_level_programming`
--   Directory: `0x0F-python-object_relational_mapping`
--   File: `1-filter_states.py`
-
- Done? Help Get a sandbox
-
-### 2\. Filter states by user input
-
-mandatory
+#### [2. Filter states by user input]()
 
 Write a script that takes in an argument and displays all values in the `states` table of `hbtn_0e_0_usa` where `name` matches the argument.
 
@@ -274,22 +216,11 @@ Enter password:
 guillaume@ubuntu:~/0x0F$ ./2-my_filter_states.py root root hbtn_0e_0_usa 'Arizona'
 (2, 'Arizona')
 guillaume@ubuntu:~/0x0F$
-
 ```
-
 **No test cases needed**
 
-**Repo:**
 
--   GitHub repository: `alx-higher_level_programming`
--   Directory: `0x0F-python-object_relational_mapping`
--   File: `2-my_filter_states.py`
-
- Done? Help Get a sandbox
-
-### 3\. SQL Injection...
-
-mandatory
+#### [3. SQL Injection...]()
 
 Wait, do you remember the previous task? Did you test `"Arizona'; TRUNCATE TABLE states ; SELECT * FROM states WHERE name = '"` as an input?
 
@@ -298,9 +229,7 @@ guillaume@ubuntu:~/0x0F$ ./2-my_filter_states.py root root hbtn_0e_0_usa "Arizon
 (2, 'Arizona')
 guillaume@ubuntu:~/0x0F$ ./0-select_states.py root root hbtn_0e_0_usa
 guillaume@ubuntu:~/0x0F$
-
 ```
-
 What? Empty?
 
 Yes, it's an [SQL injection](https://alx-intranet.hbtn.io/rltoken/qzLjdkHPTue2U1isMj5fJA "SQL injection") to delete all records of a table...
@@ -331,22 +260,11 @@ Enter password:
 guillaume@ubuntu:~/0x0F$ ./3-my_safe_filter_states.py root root hbtn_0e_0_usa 'Arizona'
 (2, 'Arizona')
 guillaume@ubuntu:~/0x0F$
-
 ```
-
 **No test cases needed**
 
-**Repo:**
 
--   GitHub repository: `alx-higher_level_programming`
--   Directory: `0x0F-python-object_relational_mapping`
--   File: `3-my_safe_filter_states.py`
-
- Done? Help Get a sandbox
-
-### 4\. Cities by states
-
-mandatory
+#### [4. Cities by states]()
 
 Write a script that lists all `cities` from the database `hbtn_0e_4_usa`
 
@@ -402,22 +320,11 @@ guillaume@ubuntu:~/0x0F$ ./4-cities_by_state.py root root hbtn_0e_4_usa
 (14, 'Henderson', 'Nevada')
 (15, 'Carson City', 'Nevada')
 guillaume@ubuntu:~/0x0F$
-
 ```
-
 **No test cases needed**
 
-**Repo:**
 
--   GitHub repository: `alx-higher_level_programming`
--   Directory: `0x0F-python-object_relational_mapping`
--   File: `4-cities_by_state.py`
-
- Done? Help Get a sandbox
-
-### 5\. All cities by state
-
-mandatory
+#### [5. All cities by state]()
 
 Write a script that takes in the name of a state as an argument and lists all `cities` of that state, using the database `hbtn_0e_4_usa`
 
@@ -463,22 +370,11 @@ Dallas, Houston, Austin
 guillaume@ubuntu:~/0x0F$ ./5-filter_cities.py root root hbtn_0e_4_usa Hawaii
 
 guillaume@ubuntu:~/0x0F$
-
 ```
-
 **No test cases needed**
 
-**Repo:**
 
--   GitHub repository: `alx-higher_level_programming`
--   Directory: `0x0F-python-object_relational_mapping`
--   File: `5-filter_cities.py`
-
- Done? Help Get a sandbox
-
-### 6\. First state model
-
-mandatory
+#### [6. First state model]()
 
 ![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/f84fe6edb9436c8560996c6d72e17ea51dab28e1.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20220303%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220303T161831Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=a3638749d990d0ff2227922fecc85a0380e4a69c9c0f696428a5a716cd1aeb49)
 
@@ -522,22 +418,12 @@ Enter password:
 Table   Create Table
 states  CREATE TABLE `states` (\n  `id` int(11) NOT NULL AUTO_INCREMENT,\n  `name` varchar(128) NOT NULL,\n  PRIMARY KEY (`id`)\n) ENGINE=InnoDB DEFAULT CHARSET=latin1
 guillaume@ubuntu:~/0x0F$
-
 ```
-
 **No test cases needed**
 
-**Repo:**
 
--   GitHub repository: `alx-higher_level_programming`
--   Directory: `0x0F-python-object_relational_mapping`
--   File: `model_state.py`
+#### [7. All states via SQLAlchemy]()
 
- Done? Help
-
-### 7\. All states via SQLAlchemy
-
-mandatory
 
 Write a script that lists all `State` objects from the database `hbtn_0e_6_usa`
 
@@ -563,22 +449,12 @@ guillaume@ubuntu:~/0x0F$ ./7-model_state_fetch_all.py root root hbtn_0e_6_usa
 4: New York
 5: Nevada
 guillaume@ubuntu:~/0x0F$
-
 ```
 
 **No test cases needed**
 
-**Repo:**
 
--   GitHub repository: `alx-higher_level_programming`
--   Directory: `0x0F-python-object_relational_mapping`
--   File: `7-model_state_fetch_all.py`
-
- Done? Help Get a sandbox
-
-### 8\. First state
-
-mandatory
+#### [8. First state]()
 
 Write a script that prints the first `State` object from the database `hbtn_0e_6_usa`
 
@@ -598,20 +474,10 @@ guillaume@ubuntu:~/0x0F$ ./8-model_state_fetch_first.py root root hbtn_0e_6_usa
 guillaume@ubuntu:~/0x0F$
 
 ```
-
 **No test cases needed**
 
-**Repo:**
 
--   GitHub repository: `alx-higher_level_programming`
--   Directory: `0x0F-python-object_relational_mapping`
--   File: `8-model_state_fetch_first.py`
-
- Done? Help Get a sandbox
-
-### 9\. Contains `a`
-
-mandatory
+#### [9. Contains `a`]()
 
 Write a script that lists all `State` objects that contain the letter `a` from the database `hbtn_0e_6_usa`
 
@@ -632,20 +498,10 @@ guillaume@ubuntu:~/0x0F$ ./9-model_state_filter_a.py root root hbtn_0e_6_usa
 guillaume@ubuntu:~/0x0F$
 
 ```
-
 **No test cases needed**
 
-**Repo:**
 
--   GitHub repository: `alx-higher_level_programming`
--   Directory: `0x0F-python-object_relational_mapping`
--   File: `9-model_state_filter_a.py`
-
- Done? Help Get a sandbox
-
-### 10\. Get a state
-
-mandatory
+#### [10. Get a state]()
 
 Write a script that prints the `State` object with the `name` passed as argument from the database `hbtn_0e_6_usa`
 
@@ -664,22 +520,11 @@ guillaume@ubuntu:~/0x0F$ ./10-model_state_my_get.py root root hbtn_0e_6_usa Texa
 guillaume@ubuntu:~/0x0F$ ./10-model_state_my_get.py root root hbtn_0e_6_usa Illinois
 Not found
 guillaume@ubuntu:~/0x0F$
-
 ```
-
 **No test cases needed**
 
-**Repo:**
 
--   GitHub repository: `alx-higher_level_programming`
--   Directory: `0x0F-python-object_relational_mapping`
--   File: `10-model_state_my_get.py`
-
- Done? Help Get a sandbox
-
-### 11\. Add a new state
-
-mandatory
+#### [11. Add a new state]()
 
 Write a script that adds the `State` object "Louisiana" to the database `hbtn_0e_6_usa`
 
@@ -701,22 +546,11 @@ guillaume@ubuntu:~/0x0F$ ./7-model_state_fetch_all.py root root hbtn_0e_6_usa
 5: Nevada
 6: Louisiana
 guillaume@ubuntu:~/0x0F$
-
 ```
-
 **No test cases needed**
 
-**Repo:**
 
--   GitHub repository: `alx-higher_level_programming`
--   Directory: `0x0F-python-object_relational_mapping`
--   File: `11-model_state_insert.py`
-
- Done? Help Get a sandbox
-
-### 12\. Update a state
-
-mandatory
+#### [12. Update a state]()
 
 Write a script that changes the name of a `State` object from the database `hbtn_0e_6_usa`
 
@@ -737,22 +571,11 @@ guillaume@ubuntu:~/0x0F$ ./7-model_state_fetch_all.py root root hbtn_0e_6_usa
 5: Nevada
 6: Louisiana
 guillaume@ubuntu:~/0x0F$
-
 ```
-
 **No test cases needed**
 
-**Repo:**
 
--   GitHub repository: `alx-higher_level_programming`
--   Directory: `0x0F-python-object_relational_mapping`
--   File: `12-model_state_update_id_2.py`
-
- Done? Help Get a sandbox
-
-### 13\. Delete states
-
-mandatory
+#### [13. Delete states]()
 
 Write a script that deletes all `State` objects with a name containing the letter `a` from the database `hbtn_0e_6_usa`
 
@@ -768,22 +591,11 @@ guillaume@ubuntu:~/0x0F$ ./7-model_state_fetch_all.py root root hbtn_0e_6_usa
 2: New Mexico
 4: New York
 guillaume@ubuntu:~/0x0F$
-
 ```
-
 **No test cases needed**
 
-**Repo:**
 
--   GitHub repository: `alx-higher_level_programming`
--   Directory: `0x0F-python-object_relational_mapping`
--   File: `13-model_state_delete_a.py`
-
- Done? Help Get a sandbox
-
-### 14\. Cities in state
-
-mandatory
+#### [14. Cities in state]()
 
 Write a Python file similar to `model_state.py` named `model_city.py` that contains the class definition of a `City`.
 
@@ -850,22 +662,11 @@ Nevada: (13) Reno
 Nevada: (14) Henderson
 Nevada: (15) Carson City
 guillaume@ubuntu:~/0x0F$
-
 ```
-
 **No test cases needed**
 
-**Repo:**
 
--   GitHub repository: `alx-higher_level_programming`
--   Directory: `0x0F-python-object_relational_mapping`
--   File: `model_city.py, 14-model_city_fetch_by_state.py`
-
-### 15\. City relationship
-
-#advanced
-
-Score: 0.00% (Checks completed: 0.00%)
+#### [15. City relationship]()
 
 Improve the files `model_city.py` and `model_state.py`, and save them as `relationship_city.py` and `relationship_state.py`:
 
@@ -903,24 +704,11 @@ id  name
 id  name    state_id
 1   San Francisco   1
 guillaume@ubuntu:~/0x0F$
-
 ```
-
 **No test cases needed**
 
-**Repo:**
 
--   GitHub repository: `alx-higher_level_programming`
--   Directory: `0x0F-python-object_relational_mapping`
--   File: `relationship_city.py, relationship_state.py, 100-relationship_states_cities.py`
-
- Done? Help Check your code Get a sandbox QA Review
-
-### 16\. List relationship
-
-#advanced
-
-Score: 0.00% (Checks completed: 0.00%)
+#### [16. List relationship]()
 
 Write a script that lists all `State` objects, and corresponding `City` objects, contained in the database `hbtn_0e_101_usa`
 
@@ -989,22 +777,10 @@ guillaume@ubuntu:~/0x0F$ ./101-relationship_states_cities_list.py root root hbtn
 guillaume@ubuntu:~/0x0F$
 
 ```
-
 **No test cases needed**
 
-**Repo:**
 
--   GitHub repository: `alx-higher_level_programming`
--   Directory: `0x0F-python-object_relational_mapping`
--   File: `101-relationship_states_cities_list.py`
-
- Done? Help Check your code Get a sandbox QA Review
-
-### 17\. From city
-
-#advanced
-
-Score: 0.00% (Checks completed: 0.00%)
+#### [17. From city]()
 
 Write a script that lists all `City` objects from the database `hbtn_0e_101_usa`
 
@@ -1042,11 +818,4 @@ guillaume@ubuntu:~/0x0F$ ./102-relationship_cities_states_list.py root root hbtn
 guillaume@ubuntu:~/0x0F$
 
 ```
-
 **No test cases needed**
-
-**Repo:**
-
--   GitHub repository: `alx-higher_level_programming`
--   Directory: `0x0F-python-object_relational_mapping`
--   File: `102-relationship_cities_states_list.py`
