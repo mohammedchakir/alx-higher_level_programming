@@ -8,6 +8,7 @@ It takes three arguments: MySQL username, MySQL password, and database name.
 import MySQLdb
 import sys
 
+
 def list_states_with_n(username, password, db_name):
     """
     Lists all states with names starting with 'N' from the database.
@@ -21,6 +22,7 @@ def list_states_with_n(username, password, db_name):
         print(row)
     cur.close()
     db.close()
+
 
 if __name__ == "__main__":
     if len(sys.argv) == 4:
