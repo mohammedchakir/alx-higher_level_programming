@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-This script lists all State objects from the database hbtn_0e_6_usa.
+This script adds the State object "Louisiana" to the database hbtn_0e_6_usa.
 It takes three arguments: MySQL username, MySQL password, and database name.
 """
 
@@ -10,21 +10,23 @@ from model_state import Base, State
 import sys
 
 
-def list_states(username, password, db_name):
+def add_louisiana_state(username, password, db_name):
     """
-    Lists all State objects from the database in ascending order by states.id.
+    Adds the State object "Louisiana" to the database and prints its id.
     """
     engine = create_engine(f'mysql+mysqldb://{username}:{password}@localhost:3306/{db_name}')
     Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
     session = Session()
-    
-    for state in session.query(State).order_by(State.id).all():
-        print(f"{state.id}: {state.name}")
-    
+
+    new_state = State(name="Louisiana")
+    session.add(new_state)
+    session.commit()
+    print(new_state.id)
+
     session.close()
 
 
 if __name__ == "__main__":
     if len(sys.argv) == 4:
-        list_states(sys.argv[1], sys.argv[2], sys.argv[3])
+        add_louisiana_state(sys.argv[1], sys.argv[2], sys.argv[3])
