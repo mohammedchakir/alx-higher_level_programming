@@ -14,7 +14,8 @@ def print_first_state(username, password, db_name):
     """
     Prints the first State object from the database.
     """
-    engine = create_engine(f'mysql+mysqldb://{username}:{password}@localhost:3306/{db_name}')
+    engine = create_engine(f'mysql+mysqldb://
+            {username}:{password}@localhost:3306/{db_name}')
     Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
     session = Session()

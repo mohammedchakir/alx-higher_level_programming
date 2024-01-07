@@ -15,7 +15,8 @@ def create_california_with_sf(username, password, db_name):
     """
     Creates 'California' state with 'San Francisco' city.
     """
-    engine = create_engine(f'mysql+mysqldb://{username}:{password}@localhost:3306/{db_name}')
+    engine = create_engine(f'mysql+mysqldb://
+            {username}:{password}@localhost:3306/{db_name}')
     Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
     session = Session()

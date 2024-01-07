@@ -2,7 +2,8 @@
 """
 This script displays all values in the states table of hbtn_0e_0_usa
 where the name matches the provided argument.
-It takes four arguments: MySQL username, MySQL password, database name, and state name.
+It takes four argementts: MySQL username, MySQL password, database name,
+and state name.
 """
 
 import MySQLdb
@@ -16,7 +17,8 @@ def search_state(username, password, db_name, state_name):
     db = MySQLdb.connect(host="localhost", port=3306, user=username,
                          passwd=password, db=db_name)
     cur = db.cursor()
-    query = "SELECT * FROM states WHERE name = '{}' ORDER BY id ASC".format(state_name)
+    query = "SELECT * FROM states WHERE name = '{}' ORDER BY id ASC"
+    .format(state_name)
     cur.execute(query)
     rows = cur.fetchall()
     for row in rows:

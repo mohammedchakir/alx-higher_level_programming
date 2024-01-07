@@ -6,14 +6,17 @@ contained in the database hbtn_0e_101_usa.
 
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from relationship_state import Base, State  # Ensure these are the updated versions with relationships
+from relationship_state import Base, State
 import sys
+
 
 def list_states_and_cities(username, password, db_name):
     """
-    Lists all State objects and their corresponding City objects from the database.
+    Lists all State objects and their corresponding City objects
+    from the database.
     """
-    engine = create_engine(f'mysql+mysqldb://{username}:{password}@localhost:3306/{db_name}')
+    engine = create_engine(f'mysql+mysqldb://
+            {username}:{password}@localhost:3306/{db_name}')
     Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
     session = Session()
@@ -25,6 +28,7 @@ def list_states_and_cities(username, password, db_name):
             print(f"    {city.id}: {city.name}")
 
     session.close()
+
 
 if __name__ == "__main__":
     if len(sys.argv) == 4:

@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-This script deletes all State objects that have a name containing the letter 'a'
-from the database hbtn_0e_6_usa. It takes three arguments: MySQL username,
+This script deletes all State objects that have a name containing the letter
+'a' from the database hbtn_0e_6_usa. It takes three arguments: MySQL username,
 MySQL password, and database name.
 """
 
@@ -15,7 +15,8 @@ def delete_states_with_a(username, password, db_name):
     """
     Deletes all State objects with names containing the letter 'a'.
     """
-    engine = create_engine(f'mysql+mysqldb://{username}:{password}@localhost:3306/{db_name}')
+    engine = create_engine(f'mysql+mysqldb://
+            {username}:{password}@localhost:3306/{db_name}')
     Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
     session = Session()

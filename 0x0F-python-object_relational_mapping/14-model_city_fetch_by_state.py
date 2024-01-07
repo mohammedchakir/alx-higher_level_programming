@@ -14,12 +14,14 @@ def list_cities_by_state(username, password, db_name):
     """
     Prints all City objects, sorted by city id, along with their state names.
     """
-    engine = create_engine(f'mysql+mysqldb://{username}:{password}@localhost:3306/{db_name}')
+    engine = create_engine(f'mysql+mysqldb://
+            {username}:{password}@localhost:3306/{db_name}')
     Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    for city, state in session.query(City, State).join(State).order_by(City.id).all():
+    for city, state in session.query(City,
+            State).join(State).order_by(City.id).all():
         print(f"{state.name}: ({city.id}) {city.name}")
 
     session.close()

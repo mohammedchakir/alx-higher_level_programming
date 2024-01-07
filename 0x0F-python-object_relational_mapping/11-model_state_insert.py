@@ -14,7 +14,8 @@ def add_louisiana_state(username, password, db_name):
     """
     Adds the State object "Louisiana" to the database and prints its id.
     """
-    engine = create_engine(f'mysql+mysqldb://{username}:{password}@localhost:3306/{db_name}')
+    engine = create_engine(f'mysql+mysqldb://
+            {username}:{password}@localhost:3306/{db_name}')
     Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
     session = Session()

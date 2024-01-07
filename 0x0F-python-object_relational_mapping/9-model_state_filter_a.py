@@ -15,12 +15,14 @@ def list_states_containing_a(username, password, db_name):
     """
     Lists all State objects that contain the letter 'a' from the database.
     """
-    engine = create_engine(f'mysql+mysqldb://{username}:{password}@localhost:3306/{db_name}')
+    engine = create_engine(f'mysql+mysqldb://
+            {username}:{password}@localhost:3306/{db_name}')
     Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    states_with_a = session.query(State).filter(State.name.like('%a%')).order_by(State.id)
+    states_with_a = session.query(State).filter(State.name.
+            like('%a%')).order_by(State.id)
     for state in states_with_a:
         print(f"{state.id}: {state.name}")
 

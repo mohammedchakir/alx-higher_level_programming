@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 """
-This script is safe from MySQL injections. It displays all values in the states table
-of hbtn_0e_0_usa where the name matches the provided argument.
-It accepts four arguments: MySQL username, MySQL password, database name, and state name.
+This script is safe from MySQL injections. It displays all values in the 
+states table of hbtn_0e_0_usa where the name matches the provided argument.
+It accepts four arguments: MySQL username, MySQL password, database name,
+and state name.
 """
 
 import MySQLdb

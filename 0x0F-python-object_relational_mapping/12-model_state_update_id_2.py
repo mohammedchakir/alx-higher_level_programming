@@ -15,7 +15,8 @@ def change_state_name(username, password, db_name):
     """
     Changes the name of the State object with id = 2 to 'New Mexico'.
     """
-    engine = create_engine(f'mysql+mysqldb://{username}:{password}@localhost:3306/{db_name}')
+    engine = create_engine(f'mysql+mysqldb://
+            {username}:{password}@localhost:3306/{db_name}')
     Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
     session = Session()

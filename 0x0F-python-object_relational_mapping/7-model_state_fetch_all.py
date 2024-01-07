@@ -14,14 +14,13 @@ def list_states(username, password, db_name):
     """
     Lists all State objects from the database in ascending order by states.id.
     """
-    engine = create_engine(f'mysql+mysqldb://{username}:{password}@localhost:3306/{db_name}')
+    engine = create_engine(f'mysql+mysqldb://
+            {username}:{password}@localhost:3306/{db_name}')
     Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
     session = Session()
-    
     for state in session.query(State).order_by(State.id).all():
         print(f"{state.id}: {state.name}")
-    
     session.close()
 
 

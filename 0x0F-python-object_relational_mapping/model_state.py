@@ -23,5 +23,6 @@ class State(Base):
 
 if __name__ == "__main__":
     # Your code to connect to the database, for example:
-    engine = create_engine('mysql+mysqldb://<username>:<password>@localhost:3306/<dbname>')
+    engine = create_engine('mysql+mysqldb://
+            <username>:<password>@localhost:3306/<dbname>')
     Base.metadata.create_all(engine)
