@@ -1,5 +1,7 @@
 ## *0x12. JavaScript - Warm up*
 
+`JavaScript`
+
 By Guillaume
 
 
@@ -17,19 +19,19 @@ For the moment, and for learning all basic concepts of this language, we will do
 ## *Resources:*
 Read or watch:
 
--   [Writing JavaScript Code]()
--   [Variables]()
--   [Data Types]()
--   [Operators]()
--   [Operator Precedence]()
--   [Controlling Program Flow]()
--   [Functions]()
--   [Objects and Arrays]()
--   [Intrinsic Objects]()
--   [Module patterns]()
--   [var, let and const]()
--   [JavaScript Tutorial]()
--   [Modern JS]()
+-   [Writing JavaScript Code](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics)
+-   [Variables](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Variables)
+-   [Data Types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
+-   [Operators](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics)
+-   [Operator Precedence](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
+-   [Controlling Program Flow](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling)
+-   [Functions](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Functions)
+-   [Objects and Arrays](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects)
+-   [Intrinsic Objects](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects)
+-   [Module patterns](https://darrenderidder.github.io/talks/ModulePatterns/#/)
+-   [var, let and const](https://www.youtube.com/watch?v=sjyJBL5fkp8)
+-   [JavaScript Tutorial](https://www.youtube.com/watch?v=vZBCTc9zHtI)
+-   [Modern JS](https://github.com/mbeaudru/modern-js-cheatsheet)
 
 
 ## *General:*
@@ -64,7 +66,7 @@ $ sudo apt-get install -y nodejs
 
 ### Install semi-standard
 
-[Documentation]()
+[Documentation](https://github.com/standard/semistandard)
 
 ```
 $ sudo npm install semistandard --global
@@ -121,7 +123,7 @@ Write a script that prints a message depending of the number of arguments passed
 -   You must use `console.log(...)` to print all output
 -   You are not allowed to use `var`
 
-Reference: [process.argv](https://alx-intranet.hbtn.io/rltoken/5kTYi3rxb6KM1_pivm-tXg "process.argv")
+Reference: [process.argv](https://nodejs.org/api/process.html#process_process_argv)
 
 ```
 @ubuntu:~/0x12$ ./2-arguments.js
@@ -380,7 +382,7 @@ Write a function that returns the addition of 2 integers.
 -   The name of the function must be `add`
 -   You are not allowed to use `var`
 
-[Tip](https://alx-intranet.hbtn.io/rltoken/1k6VPdLchwtGubOfPyGL1Q "Tip")
+[Tip](https://51elliot.blogspot.com/2012/01/simple-intro-to-nodejs-module-scope.html)
 
 ```
 @ubuntu:~/0x12$ cat 13-main.js
@@ -410,7 +412,8 @@ console.log(myVar);
 
 ```
 
-![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/4ae30fb44f708dbb3abc211b784db614e615ca21.gif?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20220301%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220301T121514Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=a1f02cfa1a04eae1b926f44e9a5b754a0ebf8e706a6b5f5be7f2445959cc4c4f)
+![4ae30fb44f708dbb3abc211b784db614e615ca21](https://github.com/mohammedchakir/alx-higher_level_programming/assets/129831433/fba5e66b-1629-4fcb-9f08-f30fe6a6363c)
+
 
 Do you get it? Tweet! Post! Talk about it!
 

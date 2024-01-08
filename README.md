@@ -45,32 +45,31 @@ pip install pycodestyle
 
 To view any project you're interested in accessing, kindly follow these steps:
 
-- clone the repository
+- **clone the repository**
+```
+git clone https://github.com/mohammedchakir/alx-higher_level_programming.git
+```
+```
+cd alx-higher_level_programming
+```
 
-    - ```
-      git clone https://github.com/mohammedchakir/alx-higher_level_programming.git
-      ```
-    - ```
-      cd alx-higher_level_programming
-      ```
-
-- open your desired project (we take data_structures project as example)
+- **open your desired project (we take data_structures project as example)**
    
-    - ```
-      cd 0x03-python-data_structures
-      ```
+```
+cd 0x03-python-data_structures
+```
 
-- test your desired file
+- **test your desired file**
     
-    - ```
-      pycodestyle 6-print_matrix_integer.py
-      ```
+```
+pycodestyle 6-print_matrix_integer.py
+```
     
-    - ```
-      ./6-main.py
-      ```
+```
+./6-main.py
+```
       
-- Duplicate the process with additional files or projects.
+- **Duplicate the process with additional files or projects.**
 
 Author📑:
 
