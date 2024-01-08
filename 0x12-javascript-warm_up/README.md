@@ -412,7 +412,8 @@ console.log(myVar);
 
 ```
 
-![image](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/4ae30fb44f708dbb3abc211b784db614e615ca21.gif?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20240108%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240108T075404Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=56f1626e33863889dfafa77dce4483336cc82f85fdba683ecd646a7bbeb1a083)
+![4ae30fb44f708dbb3abc211b784db614e615ca21](https://github.com/mohammedchakir/alx-higher_level_programming/assets/129831433/fba5e66b-1629-4fcb-9f08-f30fe6a6363c)
+
 
 Do you get it? Tweet! Post! Talk about it!
 
