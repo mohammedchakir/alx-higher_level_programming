@@ -32,7 +32,7 @@ This repository contains programs written for the high-level programming.
 Utilizing this project necessitates the installation of certain tools.
 
 - python : [python3](https://www.python.org/)
-- pycodestyle : pep8 by running the cmd
+- pycodestyle : `pep8` by running the cmd
 ´´´
 pip install pycodestyle
 ´´´
@@ -44,17 +44,29 @@ To view any project you're interested in accessing, kindly follow these steps:
 
 - clone the repository
 
-    - `git clone https://github.com/mohammedchakir/alx-low_level_programming`
-    - `cd alx-low_level_programming`
+    - ```
+      git clone https://github.com/mohammedchakir/alx-higher_level_programming.git
+      ```
+    - ```
+      cd alx-higher_level_programming
+      ```
 
-- open your desired project (we take malloc free project as example)
+- open your desired project (we take data_structures project as example)
    
-    - `cd [0x0B. C - malloc, free](0x0B-malloc_free)`
+    - ```
+      cd 0x03-python-data_structures
+      ```
 
 - test your desired file
     
-    - `gcc -Wall -Werror -Wextra -pedantic -std=gnu89 101-strtow.c 101-strtow`
-    - `./101-strtow`
+    - ```
+      pycodestyle 6-print_matrix_integer.py
+      ```
+    
+    - ```
+      ./6-print_matrix_integer.py
+      ```
+      
 - Duplicate the process with additional files or projects.
 
 Author📑:
