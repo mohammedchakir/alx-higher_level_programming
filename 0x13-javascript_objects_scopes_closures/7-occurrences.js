@@ -8,5 +8,5 @@
  * @return {number} The number of occurrences of the search element.
  */
 exports.nbOccurences = function (list, searchElement) {
-    return list.filter(element => element === searchElement).length;
+  return list.filter(element => element === searchElement).length;
 };

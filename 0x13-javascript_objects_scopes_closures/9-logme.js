@@ -8,6 +8,6 @@ let count = 0; // Variable to keep track of the number of calls to logMe
  * @param {*} item - The current argument to be printed.
  */
 exports.logMe = function (item) {
-    console.log(`${count}: ${item}`);
-    count++;
+  console.log(`${count}: ${item}`);
+  count++;
 };
