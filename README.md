@@ -27,15 +27,18 @@ This repository contains programs written for the high-level programming.
 - [0x13-javascript_objects_scopes_closures](0x13-javascript_objects_scopes_closures)
 - [0x0F. Python - Object-relational mapping](0x0F-python-object_relational_mapping)
 
+
+
+
 ## Requirements:
 
 Utilizing this project necessitates the installation of certain tools.
 
 - python : [python3](https://www.python.org/)
 - pycodestyle : `pep8` by running the cmd
-´´´
+```
 pip install pycodestyle
-´´´
+```
 
 
 ## Navigation Guide:
