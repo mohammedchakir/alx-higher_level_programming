@@ -5,7 +5,7 @@ const firstArg = args[0];
 const number = parseInt(firstArg);
 
 if (isNaN(number)) {
-    console.log("Not a number");
+  console.log('Not a number');
 } else {
-    console.log("My number: " + number);
+  console.log('My number: ' + number);
 }
