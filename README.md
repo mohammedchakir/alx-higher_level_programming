@@ -64,7 +64,7 @@ To view any project you're interested in accessing, kindly follow these steps:
       ```
     
     - ```
-      ./6-print_matrix_integer.py
+      ./6-main.py
       ```
       
 - Duplicate the process with additional files or projects.
