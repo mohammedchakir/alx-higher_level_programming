@@ -26,3 +26,38 @@ This repository contains programs written for the high-level programming.
 - [0x12. JavaScript - Warm up](0x12-javascript-warm_up)
 - [0x13-javascript_objects_scopes_closures](0x13-javascript_objects_scopes_closures)
 - [0x0F. Python - Object-relational mapping](0x0F-python-object_relational_mapping)
+
+## Requirements:
+
+Utilizing this project necessitates the installation of certain tools.
+
+- python : [python3](https://www.python.org/)
+- pycodestyle : pep8 by running the cmd
+´´´
+pip install pycodestyle
+´´´
+
+
+## Navigation Guide:
+
+To view any project you're interested in accessing, kindly follow these steps:
+
+- clone the repository
+
+    - `git clone https://github.com/mohammedchakir/alx-low_level_programming`
+    - `cd alx-low_level_programming`
+
+- open your desired project (we take malloc free project as example)
+   
+    - `cd [0x0B. C - malloc, free](0x0B-malloc_free)`
+
+- test your desired file
+    
+    - `gcc -Wall -Werror -Wextra -pedantic -std=gnu89 101-strtow.c 101-strtow`
+    - `./101-strtow`
+- Duplicate the process with additional files or projects.
+
+Author📑:
+
+Mohammed-chakir  <https://github.com/mohammedchakir>
+
