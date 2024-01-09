@@ -1,4 +1,6 @@
 ## *0x13. JavaScript - Objects, Scopes and Closures*
+`
+JavaScript`
 
 By Guillaume
 
@@ -8,16 +10,16 @@ By Guillaume
 ## *Resources:*
 Read or watch:
 
--   [JavaScript object basics]()
--   [Object-oriented JavaScript]() (***read all examples!***)
--   [Class - ES6]()
--   [super - ES6]()
--   [extends - ES6]()
--   [Object prototypes]()
--   [Inheritance in JavaScript]()
--   [Closures]()
--   [this/self]()
--   [Modern JS]()
+-   [JavaScript object basics](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics)
+-   [Object-oriented JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Classes_in_JavaScript) (***read all examples!***)
+-   [Class - ES6](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
+-   [super - ES6](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super)
+-   [extends - ES6](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/extends)
+-   [Object prototypes](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes)
+-   [Inheritance in JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Classes_in_JavaScript)
+-   [Closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
+-   [this/self](https://alistapart.com/article/getoutbindingsituations/)
+-   [Modern JS](https://github.com/mbeaudru/modern-js-cheatsheet)
 
 
 ## *General:*
@@ -407,5 +409,73 @@ guillaume@ubuntu:~/0x13$ ./10-main.js
 c
 59
 guillaume@ubuntu:~/0x13$
+
+```
+
+#### [11. Factor index](100-map.js)
+
+Write a script that imports an array and computes a new array.
+
+-  Your script must import `list` from the file `100-data.js`
+-  You must use a `map`. [Tips]](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map?v=control)
+-  A new list must be created with each value equal to the value of the initial list, multipled by the - index in the list
+-  Print both the initial list and the new list
+
+```
+guillaume@ubuntu:~/0x13$ cat 100-data.js
+#!/usr/bin/node
+exports.list = [1, 2, 3, 4, 5];
+guillaume@ubuntu:~/0x13$ ./100-map.js 
+[ 1, 2, 3, 4, 5 ]
+[ 0, 2, 6, 12, 20 ]
+guillaume@ubuntu:~/0x13$
+
+```
+
+#### [12. Sorted occurences](101-sorted.js)
+
+Write a script that imports a dictionary of occurrences by user id and computes a dictionary of user ids by occurrence.
+
+-  Your script must import `dict` from the file `101-data.js`
+-  In the new dictionary:
+   -  A key is a number of occurrences
+   -  A value is the list of user ids
+-  Print the new dictionary at the end
+
+```
+guillaume@ubuntu:~/0x13$ cat 101-data.js
+#!/usr/bin/node
+exports.dict = {
+  89: 1,
+  90: 2,
+  91: 1,
+  92: 3,
+  93: 1,
+  94: 2
+};
+guillaume@ubuntu:~/0x13$ ./101-sorted.js 
+{ '1': [ '89', '91', '93' ], '2': [ '90', '94' ], '3': [ '92' ] }
+guillaume@ubuntu:~/0x13$ 
+
+```
+
+#### [13. Concat files](102-concat.js)
+
+Write a script that concats 2 files.
+
+-  The first argument is the file path of the first source file
+-  The second argument is the file path of the second source file
+-  The third argument is the file path of the destination
+
+```
+guillaume@ubuntu:~/0x13$ cat fileA
+C is fun!
+guillaume@ubuntu:~/0x13$ cat fileB
+Python is Cool!!!
+guillaume@ubuntu:~/0x13$ ./102-concat.js fileA fileB fileC
+guillaume@ubuntu:~/0x13$ cat fileC
+C is fun!
+Python is Cool!!!
+guillaume@ubuntu:~/0x13$ 
 
 ```
