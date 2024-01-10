@@ -16,11 +16,8 @@ def safe_search_state(username, password, db_name, state_name):
     db = MySQLdb.connect(
         host="localhost", port=3306, user=username, passwd=password, db=db_name)
     cur = db.cursor()
-    
-    # Safe query using parameterized statements to prevent SQL injection
     query = "SELECT * FROM states WHERE name = %s ORDER BY id ASC"
     cur.execute(query, (state_name,))
-
     rows = cur.fetchall()
     for row in rows:
         print(row)

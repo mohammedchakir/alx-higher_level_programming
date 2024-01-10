@@ -13,10 +13,14 @@ def list_cities(username, password, db_name):
     db = MySQLdb.connect(
         host="localhost", port=3306, user=username, passwd=password, db=db_name)
     cur = db.cursor()
-    
-    query = "SELECT cities.id, cities.name, states.name FROM cities JOIN states ON cities.state_id = states.id ORDER BY cities.id ASC"
+    query = """
+    SELECT cities.name
+    FROM cities
+    JOIN states ON cities.state_id = states.id
+    WHERE states.name = %s
+    ORDER BY cities.id ASC
+    """
     cur.execute(query)
-
     rows = cur.fetchall()
     for row in rows:
         print(row)
