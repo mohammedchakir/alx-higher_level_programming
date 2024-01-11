@@ -1,5 +1,6 @@
 ## *0x0F. Python - Object-relational mapping*
 
+`Python`  `OOP`  `SQL`  `MySQL`  `ORM`  `SQLAlchemy`
 
 By Guillaume
 
@@ -7,7 +8,7 @@ By Guillaume
 
 Before you start...
 
-**Please make sure your MySQL server is in 8.0** -> [How to install MySQL 8.0 in Ubuntu 20.04](https://alx-intranet.hbtn.io/rltoken/paGukker_0KoG3D9FqymNQ "How to install MySQL 8.0 in Ubuntu 20.04")
+**Please make sure your MySQL server is in 8.0** -> [How to install MySQL 8.0 in Ubuntu 20.04](https://intranet.alxswe.com/projects/272 "How to install MySQL 8.0 in Ubuntu 20.04")
 
 ## *Background Context:*
 
@@ -51,18 +52,19 @@ session.close()
 
 Read or watch:
 
--   [Object-relational mappers]()
--   [mysqlclient/MySQLdb documentation]() (*please don't pay attention to `_mysql`*)
--   [MySQLdb tutorial]()
--   [SQLAlchemy tutorial]()
--   [SQLAlchemy]()
--   [mysqlclient/MySQLdb]()
--   [Introduction to SQLAlchemy]()
--   [Flask SQLAlchemy]()
--   [10 common stumbling blocks for SQLAlchemy newbies]()
--   [Python SQLAlchemy Cheatsheet]()
--   [SQLAlchemy ORM Tutorial for Python Developers]() (***Warning:** This tutorial is with PostgreSQL, but the concept of SQLAlchemy is the same with MySQL*)
--   [SQLAlchemy Tutorial]()
+-   [Object-relational mappers](https://www.fullstackpython.com/object-relational-mappers-orms.html)
+-   [mysqlclient/MySQLdb documentation](https://mysqlclient.readthedocs.io/) (*please don't pay attention to `_mysql`*)
+-   [MySQLdb tutorial](https://www.mikusa.com/python-mysql-docs/index.html)
+-   [SQLAlchemy tutorial](https://docs.sqlalchemy.org/en/13/orm/tutorial.html)
+-   [SQLAlchemy](https://docs.sqlalchemy.org/en/13/)
+-   [mysqlclient/MySQLdb](https://github.com/PyMySQL/mysqlclient)
+-   [Introduction to SQLAlchemy](https://www.youtube.com/watch?v=woKYyhLCcnU)
+-   [Flask SQLAlchemy](https://www.youtube.com/playlist?list=PLXmMXHVSvS-BlLA5beNJojJLlpE0PJgCW)
+-   [10 common stumbling blocks for SQLAlchemy newbies](https://alextechrants.blogspot.com/2013/11/10-common-stumbling-blocks-for.html)
+-   [Python SQLAlchemy Cheatsheet](https://www.pythonsheets.com/notes/python-sqlalchemy.html)
+-   [SQLAlchemy ORM Tutorial for Python Developers](https://auth0.com/blog/sqlalchemy-orm-tutorial-for-python-developers/) (***Warning:** This tutorial is with PostgreSQL, but the concept of SQLAlchemy is the same with MySQL*)
+-   [SQLAlchemy Tutorial](https://overiq.com/sqlalchemy-101/)
+-   [Python Virtual Environments: A primer](https://realpython.com/python-virtual-environments-a-primer/)
 
 
 ### General
@@ -73,13 +75,23 @@ Read or watch:
 -   How to `INSERT` rows in a MySQL table from a Python script
 -   What ORM means
 -   How to map a Python Class to a MySQL table
+-   How to create a Python Virtual Environment
 
 
 ## *More Info:*
 
+### Install and activate venv
+
+To create a Python Virtual Environment, allowing you to install specific dependencies for this python project, we will install venv:
+```
+$ sudo apt-get install python3.8-venv
+$ python3 -m venv venv
+$ source venv/bin/activate
+```
+
 ### Install `MySQLdb` module version `2.0.x`
 
-For installing `MySQLdb`, you need to have `MySQL` installed: [How to install MySQL 8.0 in Ubuntu 20.04](https://alx-intranet.hbtn.io/rltoken/paGukker_0KoG3D9FqymNQ "How to install MySQL 8.0 in Ubuntu 20.04")
+For installing `MySQLdb`, you need to have `MySQL` installed: [How to install MySQL 8.0 in Ubuntu 20.04](https://intranet.alxswe.com/projects/272 "How to install MySQL 8.0 in Ubuntu 20.04")
 
 ```
 $ sudo apt-get install python3-dev
