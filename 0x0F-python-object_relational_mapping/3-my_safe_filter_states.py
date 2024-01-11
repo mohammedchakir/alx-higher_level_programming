@@ -1,31 +1,35 @@
 #!/usr/bin/python3
-"""
-A script that safely displays all values in the states table of hbtn_0e_0_usa
-where name matches the argument.
+"""This script retrieves data from the states table
+based on the provided state name.
 """
 
 import MySQLdb
 import sys
 
 
-def safe_search_state(username, password, db_name, state_name):
-    """
-    Connects to a MySQL database and safely prints states where name
-    matches the given argument.
-    """
-    db = MySQLdb.connect(
-        host="localhost", port=3306, user=username, passwd=password, db=db_name)
-    cur = db.cursor()
-    query = "SELECT * FROM states WHERE name = %s ORDER BY id ASC"
-    cur.execute(query, (state_name,))
-    rows = cur.fetchall()
-    for row in rows:
-        print(row)
-
-    cur.close()
-    db.close()
-
-
 if __name__ == "__main__":
-    if len(sys.argv) == 5:
-        safe_search_state(sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4])
+    """
+    Connect to the database and retrieve information
+    about a specific state.
+    """
+    
+    db = MySQLdb.connect(
+        user=sys.argv[1],
+        passwd=sys.argv[2],
+        host="localhost",
+        port=3306,
+        db=sys.argv[3],
+        charset="utf8"
+    )
+
+    cursor = db.cursor()
+    cursor.execute(
+        "SELECT * FROM states WHERE name = %s ORDER BY id ASC",
+        (sys.argv[4],)
+    )
+        
+    results = cursor.fetchall()
+    for row in results:
+        print(row)
+    cursor.close()
+    db.close()
