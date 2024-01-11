@@ -6,6 +6,7 @@ where name matches the provided argument.
 import MySQLdb
 import sys
 
+
 if __name__ == "__main__":
     """
     Connect to the database, retrieve data and display

@@ -389,7 +389,7 @@ guillaume@ubuntu:~/0x0F$
 
 #### [6. First state model]()
 
-![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/f84fe6edb9436c8560996c6d72e17ea51dab28e1.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20220303%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220303T161831Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=a3638749d990d0ff2227922fecc85a0380e4a69c9c0f696428a5a716cd1aeb49)
+![f84fe6edb9436c8560996c6d72e17ea51dab28e1](https://github.com/mohammedchakir/alx-higher_level_programming/assets/129831433/ace13fd9-53ca-40f5-8db3-7a91dce9a40c)
 
 Write a python file that contains the class definition of a `State` and an instance `Base = declarative_base()`:
 

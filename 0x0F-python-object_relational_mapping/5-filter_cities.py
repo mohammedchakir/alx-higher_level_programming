@@ -16,7 +16,6 @@ if __name__ == "__main__":
         db=sys.argv[3],
         charset="utf8"
     )
-
     cursor = db.cursor()
 
     cursor.execute(
