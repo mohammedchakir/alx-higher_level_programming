@@ -1,40 +1,34 @@
 #!/usr/bin/python3
+"""This script lists all cities of a specified state
+from the hbtn_0e_4_usa database."""
+
 import MySQLdb
 import sys
 
-def list_cities(username, password, dbname, state_name):
-    """
-    This function connects to the MySQL database and lists all cities
-    of a given state in an ascending order by cities.id.
-    """
-    db = MySQLdb.connect(host="localhost", port=3306, user=username,
-                         passwd=password, db=dbname)
-    cur = db.cursor()
-    
-    # Use parameterized query to prevent SQL injection
-    query = """
-    SELECT cities.name
-    FROM cities
-    JOIN states ON cities.state_id = states.id
-    WHERE states.name = %s
-    ORDER BY cities.id ASC
-    """
-    cur.execute(query, (state_name,))
-
-    # Fetch and print results
-    rows = cur.fetchall()
-    for row in rows:
-        print(row[0])
-
-    cur.close()
-    db.close()
 
 if __name__ == "__main__":
-    if len(sys.argv) == 5:
-        username = sys.argv[1]
-        password = sys.argv[2]
-        dbname = sys.argv[3]
-        state_name = sys.argv[4]
-        list_cities(username, password, dbname, state_name)
-    else:
-        print("Usage: ./script.py mysql_username mysql_password database_name state_name")
+
+    db = MySQLdb.connect(
+        user=sys.argv[1],
+        passwd=sys.argv[2],
+        host="localhost",
+        port=3306,
+        db=sys.argv[3],
+        charset="utf8"
+    )
+
+    cursor = db.cursor()
+
+    cursor.execute(
+        "SELECT cities.id, cities.name, states.name FROM cities "
+        "JOIN states ON cities.state_id = states.id WHERE states.name = %s "
+        "ORDER BY cities.id ASC",
+        (sys.argv[4],)
+    )
+    results = cursor.fetchall()
+
+    for row in results:
+        print(row)
+
+    cursor.close()
+    db.close()
