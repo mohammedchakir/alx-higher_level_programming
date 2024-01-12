@@ -7,6 +7,7 @@ from the hbtn_0e_101_usa database.
 import sys
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
+from relationship_city import City
 from relationship_state import Base, State
 
 
