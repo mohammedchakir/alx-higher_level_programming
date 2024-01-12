@@ -3,7 +3,6 @@
 Defines the State class and sets up the database connection.
 """
 
-import sys
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 
