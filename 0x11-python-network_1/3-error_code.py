@@ -3,8 +3,8 @@
 """
 This script takes a URL as a command-line argument, sends a request to the
 specified URL, and displays the body of the response (decoded in utf-8).
-It also handles urllib.error.HTTPError exceptions and prints the HTTP status code
-in case of an error.
+It also handles urllib.error.HTTPError exceptions and prints the HTTP
+status code in case of an error.
 """
 
 import urllib.request
