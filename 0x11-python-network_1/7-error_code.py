@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 """
 This script takes a URL as a command-line argument, sends a request to the
 specified URL using the requests package, and displays the body of the
@@ -14,7 +13,7 @@ if __name__ == "__main__":
     url = sys.argv[1]
     response = requests.get(url)
 
-if response.status_code >= 400:
-    print("Error code: {}".format(response.status_code))
-else:
-    print(response.text)
+    if response.status_code >= 400:
+        print("Error code: {}".format(response.status_code))
+    else:
+        print(response.text)
