@@ -1,4 +1,4 @@
-## *0x0D. SQL - Introduction*
+# *0x0D. SQL - Introduction*
 
 `SQL`    `MySQL`
 
