@@ -1,6 +1,6 @@
-## *0x13. JavaScript - Objects, Scopes and Closures*
-`
-JavaScript`
+# *0x13. JavaScript - Objects, Scopes and Closures*
+
+`JavaScript`
 
 By Guillaume
 
