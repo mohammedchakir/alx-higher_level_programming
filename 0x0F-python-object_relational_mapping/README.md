@@ -1,4 +1,4 @@
-## *0x0F. Python - Object-relational mapping*
+# *0x0F. Python - Object-relational mapping*
 
 `Python`  `OOP`  `SQL`  `MySQL`  `ORM`  `SQLAlchemy`
 
@@ -131,7 +131,7 @@ moved in a future release.")
 ## *Tasks:*
 
 
-#### [0. Get all states]()
+#### [0. Get all states](0-select_states.py)
 
 Write a script that lists all `states` from the database `hbtn_0e_0_usa`:
 
@@ -167,7 +167,7 @@ guillaume@ubuntu:~/0x0F$
 **No test cases needed**
 
 
-#### [1. Filter states]()
+#### [1. Filter states](1-filter_states.py)
 
 Write a script that lists all `states` with a `name` starting with `N` (upper N) from the database `hbtn_0e_0_usa`:
 
@@ -200,7 +200,7 @@ guillaume@ubuntu:~/0x0F$
 **No test cases needed**
 
 
-#### [2. Filter states by user input]()
+#### [2. Filter states by user input](2-my_filter_states.py)
 
 Write a script that takes in an argument and displays all values in the `states` table of `hbtn_0e_0_usa` where `name` matches the argument.
 
@@ -233,7 +233,7 @@ guillaume@ubuntu:~/0x0F$
 **No test cases needed**
 
 
-#### [3. SQL Injection...]()
+#### [3. SQL Injection...](3-my_safe_filter_states.py)
 
 Wait, do you remember the previous task? Did you test `"Arizona'; TRUNCATE TABLE states ; SELECT * FROM states WHERE name = '"` as an input?
 
@@ -277,7 +277,7 @@ guillaume@ubuntu:~/0x0F$
 **No test cases needed**
 
 
-#### [4. Cities by states]()
+#### [4. Cities by states](4-cities_by_state.py)
 
 Write a script that lists all `cities` from the database `hbtn_0e_4_usa`
 
@@ -337,7 +337,7 @@ guillaume@ubuntu:~/0x0F$
 **No test cases needed**
 
 
-#### [5. All cities by state]()
+#### [5. All cities by state](5-filter_cities.py)
 
 Write a script that takes in the name of a state as an argument and lists all `cities` of that state, using the database `hbtn_0e_4_usa`
 
@@ -387,7 +387,7 @@ guillaume@ubuntu:~/0x0F$
 **No test cases needed**
 
 
-#### [6. First state model]()
+#### [6. First state model](model_state.py)
 
 ![f84fe6edb9436c8560996c6d72e17ea51dab28e1](https://github.com/mohammedchakir/alx-higher_level_programming/assets/129831433/ace13fd9-53ca-40f5-8db3-7a91dce9a40c)
 
@@ -435,7 +435,7 @@ guillaume@ubuntu:~/0x0F$
 **No test cases needed**
 
 
-#### [7. All states via SQLAlchemy]()
+#### [7. All states via SQLAlchemy](7-model_state_fetch_all.py)
 
 
 Write a script that lists all `State` objects from the database `hbtn_0e_6_usa`
@@ -467,7 +467,7 @@ guillaume@ubuntu:~/0x0F$
 **No test cases needed**
 
 
-#### [8. First state]()
+#### [8. First state](8-model_state_fetch_first.py)
 
 Write a script that prints the first `State` object from the database `hbtn_0e_6_usa`
 
@@ -490,7 +490,7 @@ guillaume@ubuntu:~/0x0F$
 **No test cases needed**
 
 
-#### [9. Contains `a`]()
+#### [9. Contains `a`](9-model_state_filter_a.py)
 
 Write a script that lists all `State` objects that contain the letter `a` from the database `hbtn_0e_6_usa`
 
@@ -514,7 +514,7 @@ guillaume@ubuntu:~/0x0F$
 **No test cases needed**
 
 
-#### [10. Get a state]()
+#### [10. Get a state](10-model_state_my_get.py)
 
 Write a script that prints the `State` object with the `name` passed as argument from the database `hbtn_0e_6_usa`
 
@@ -537,7 +537,7 @@ guillaume@ubuntu:~/0x0F$
 **No test cases needed**
 
 
-#### [11. Add a new state]()
+#### [11. Add a new state](11-model_state_insert.py)
 
 Write a script that adds the `State` object "Louisiana" to the database `hbtn_0e_6_usa`
 
@@ -563,7 +563,7 @@ guillaume@ubuntu:~/0x0F$
 **No test cases needed**
 
 
-#### [12. Update a state]()
+#### [12. Update a state](12-model_state_update_id_2.py)
 
 Write a script that changes the name of a `State` object from the database `hbtn_0e_6_usa`
 
@@ -588,7 +588,7 @@ guillaume@ubuntu:~/0x0F$
 **No test cases needed**
 
 
-#### [13. Delete states]()
+#### [13. Delete states](13-model_state_delete_a.py)
 
 Write a script that deletes all `State` objects with a name containing the letter `a` from the database `hbtn_0e_6_usa`
 
@@ -608,9 +608,9 @@ guillaume@ubuntu:~/0x0F$
 **No test cases needed**
 
 
-#### [14. Cities in state]()
+#### [14. Cities in state](14-model_city_fetch_by_state.py)
 
-Write a Python file similar to `model_state.py` named `model_city.py` that contains the class definition of a `City`.
+Write a Python file similar to `model_state.py` named [model_city.py](model_city.py) that contains the class definition of a `City`.
 
 -   `City` class:
     -   inherits from `Base` (imported from `model_state`)
@@ -679,9 +679,9 @@ guillaume@ubuntu:~/0x0F$
 **No test cases needed**
 
 
-#### [15. City relationship]()
+#### [15. City relationship](100-relationship_states_cities.py)
 
-Improve the files `model_city.py` and `model_state.py`, and save them as `relationship_city.py` and `relationship_state.py`:
+Improve the files `model_city.py` and `model_state.py`, and save them as [relationship_city.py](relationship_city.py) and [relationship_state.py](relationship_state.py):
 
 -   `City` class:
     -   No change
@@ -721,7 +721,7 @@ guillaume@ubuntu:~/0x0F$
 **No test cases needed**
 
 
-#### [16. List relationship]()
+#### [16. List relationship](101-relationship_states_cities_list.py)
 
 Write a script that lists all `State` objects, and corresponding `City` objects, contained in the database `hbtn_0e_101_usa`
 
@@ -793,7 +793,7 @@ guillaume@ubuntu:~/0x0F$
 **No test cases needed**
 
 
-#### [17. From city]()
+#### [17. From city](102-relationship_cities_states_list.py)
 
 Write a script that lists all `City` objects from the database `hbtn_0e_101_usa`
 
