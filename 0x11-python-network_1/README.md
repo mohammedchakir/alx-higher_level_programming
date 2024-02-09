@@ -1,22 +1,17 @@
-0x11. Python - Network #1
-=========================
+# *0x11. Python - Network #1*
 
--   By Guillaume, CTO at Holberton School
--   Weight: 1
+`Python`   `Scripting`   `Back-end`   `API`
 
-Resources
----------
+By Guillaume, CTO at Holberton School
+
+
+## *Resources:*
 
 **Read or watch**:
 
 -   [Quickstart with Requests package](https://alx-intranet.hbtn.io/rltoken/KoRrs5dVWsb-B82e-M1TQQ "HOWTO Fetch Internet Resources Using <code>urllib</code> Package" target="_blank">HOWTO Fetch Internet Resources Using <code>urllib</code> Package</a> </li>
     <li><a href=")
 -   [Requests package](https://alx-intranet.hbtn.io/rltoken/82yOuRsJgpxlGFPmRBDqxQ "Requests package")
-
-Learning Objectives
--------------------
-
-At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/kn48lNAWMEoi1DysNqM6bg "explain to anyone"), **without the help of Google**:
 
 ### General
 
@@ -28,8 +23,7 @@ At the end of this project, you are expected to be able to [explain to anyone](
 -   How to fetch JSON resources
 -   How to manipulate data from an external service
 
-Requirements
-------------
+## *Requirements:*
 
 ### General
 
@@ -47,14 +41,10 @@ Requirements
 -   A documentation is not a simple word, it's a real sentence explaining what's the purpose of the module, class or method (the length of it will be verified)
 -   Your code should not be executed when imported (by using `if __name__ == "__main__":`)
 
-Tasks
------
+## *Tasks:*
 
-### 0\. What's my status? #0
 
-mandatory
-
-Score: 0.00% (Checks completed: 0.00%)
+#### [0. What's my status? #0](0-hbtn_status.py)
 
 Write a Python script that fetches `https://alx-intranet.hbtn.io/status`
 
@@ -73,19 +63,7 @@ guillaume@ubuntu:~/0x11$
 
 ```
 
-**Repo:**
-
--   GitHub repository: `alx-higher_level_programming`
--   Directory: `0x11-python-network_1`
--   File: `0-hbtn_status.py`
-
- Done? Help Check your code Ask for a new correction Get a sandbox QA Review
-
-### 1\. Response header value #0
-
-mandatory
-
-Score: 0.00% (Checks completed: 0.00%)
+#### [1. Response header value #0](1-hbtn_header.py)
 
 Write a Python script that takes in a URL, sends a request to the URL and displays the value of the `X-Request-Id` variable found in the header of the response.
 
@@ -105,19 +83,7 @@ guillaume@ubuntu:~/0x11$
 
 ```
 
-**Repo:**
-
--   GitHub repository: `alx-higher_level_programming`
--   Directory: `0x11-python-network_1`
--   File: `1-hbtn_header.py`
-
- Done? Help Check your code Ask for a new correction Get a sandbox QA Review
-
-### 2\. POST an email #0
-
-mandatory
-
-Score: 0.00% (Checks completed: 0.00%)
+#### [2. POST an email #0](2-post_email.py)
 
 Write a Python script that takes in a URL and an email, sends a `POST` request to the passed URL with the email as a parameter, and displays the body of the response (decoded in `utf-8`)
 
@@ -136,19 +102,8 @@ guillaume@ubuntu:~/0x11$
 
 ```
 
-**Repo:**
 
--   GitHub repository: `alx-higher_level_programming`
--   Directory: `0x11-python-network_1`
--   File: `2-post_email.py`
-
- Done? Help Check your code Ask for a new correction Get a sandbox QA Review
-
-### 3\. Error code #0
-
-mandatory
-
-Score: 0.00% (Checks completed: 0.00%)
+#### [3. Error code #0](3-error_code.py)
 
 Write a Python script that takes in a URL, sends a request to the URL and displays the body of the response (decoded in `utf-8`).
 
@@ -173,19 +128,7 @@ guillaume@ubuntu:~/0x11$
 
 ```
 
-**Repo:**
-
--   GitHub repository: `alx-higher_level_programming`
--   Directory: `0x11-python-network_1`
--   File: `3-error_code.py`
-
- Done? Help Check your code Ask for a new correction Get a sandbox QA Review
-
-### 4\. What's my status? #1
-
-mandatory
-
-Score: 0.00% (Checks completed: 0.00%)
+#### [4. What's my status? #1](4-hbtn_status.py)
 
 Write a Python script that fetches `https://alx-intranet.hbtn.io/status`
 
@@ -202,19 +145,7 @@ guillaume@ubuntu:~/0x11$
 
 ```
 
-**Repo:**
-
--   GitHub repository: `alx-higher_level_programming`
--   Directory: `0x11-python-network_1`
--   File: `4-hbtn_status.py`
-
- Done? Help Check your code Ask for a new correction Get a sandbox QA Review
-
-### 5\. Response header value #1
-
-mandatory
-
-Score: 0.00% (Checks completed: 0.00%)
+#### [5. Response header value #1](5-hbtn_header.py)
 
 Write a Python script that takes in a URL, sends a request to the URL and displays the value of the variable `X-Request-Id` in the response header
 
@@ -233,19 +164,8 @@ guillaume@ubuntu:~/0x11$
 
 ```
 
-**Repo:**
 
--   GitHub repository: `alx-higher_level_programming`
--   Directory: `0x11-python-network_1`
--   File: `5-hbtn_header.py`
-
- Done? Help Check your code Ask for a new correction Get a sandbox QA Review
-
-### 6\. POST an email #1
-
-mandatory
-
-Score: 0.00% (Checks completed: 0.00%)
+#### [6. POST an email #1](6-post_email.py)
 
 Write a Python script that takes in a URL and an email address, sends a `POST` request to the passed URL with the email as a parameter, and finally displays the body of the response.
 
@@ -263,19 +183,7 @@ guillaume@ubuntu:~/0x11$
 
 ```
 
-**Repo:**
-
--   GitHub repository: `alx-higher_level_programming`
--   Directory: `0x11-python-network_1`
--   File: `6-post_email.py`
-
- Done? Help Check your code Ask for a new correction Get a sandbox QA Review
-
-### 7\. Error code #1
-
-mandatory
-
-Score: 0.00% (Checks completed: 0.00%)
+#### [7. Error code #1](7-error_code.py)
 
 Write a Python script that takes in a URL, sends a request to the URL and displays the body of the response.
 
@@ -299,19 +207,8 @@ guillaume@ubuntu:~/0x11$
 
 ```
 
-**Repo:**
 
--   GitHub repository: `alx-higher_level_programming`
--   Directory: `0x11-python-network_1`
--   File: `7-error_code.py`
-
- Done? Help Check your code Ask for a new correction Get a sandbox QA Review
-
-### 8\. Search API
-
-mandatory
-
-Score: 0.00% (Checks completed: 0.00%)
+#### [8. Search API](8-json_api.py)
 
 Write a Python script that takes in a letter and sends a `POST` request to `http://0.0.0.0:5000/search_user` with the letter as a parameter.
 
@@ -339,8 +236,58 @@ guillaume@ubuntu:~/0x11$
 
 ```
 
-**Repo:**
+#### [9. My GitHub!](10-my_github.py)
 
--   GitHub repository: `alx-higher_level_programming`
--   Directory: `0x11-python-network_1`
--   File: `8-json_api.py`
+Write a Python script that takes your GitHub credentials (username and password) and uses the [GitHub API](https://docs.github.com/en/rest/users?apiVersion=2022-11-28) to display your `id`
+
+- You must use [Basic Authentication with](https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api?apiVersion=2022-11-28) a [personal access token as password](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) to access to your information (only `read:user` permission is needed)
+- The first argument will be your `username`
+- The second argument will be your `password` (in your case, a [personal access token as password](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens))
+- You must use the package `requests` and `sys`
+- You are not allowed to import packages other than `requests` and `sys`
+- You don’t need to check arguments passed to the script (number or type)
+
+```
+guillaume@ubuntu:~/0x11$ ./10-my_github.py papamuziko cisfun
+2531536
+guillaume@ubuntu:~/0x11$ ./10-my_github.py papamuziko wrong_pwd
+None
+guillaume@ubuntu:~/0x11$ 
+```
+    
+#### [10. Time for an interview!](100-github_commits.py)
+
+The Holberton School staff evaluates candidates applying for a back-end position with multiple technical challenges, like this one:
+
+```
+Please list 10 commits (from the most recent to oldest) of the repository “rails” by the user “rails”
+You must use the GitHub API, here is the documentation https://developer.github.com/v3/repos/commits/
+Print all commits by: `<sha>: <author name>` (one by line)
+```
+
+Write a Python script that takes 2 arguments in order to solve this challenge.
+
+- The first argument will be the `repository name`
+- The second argument will be the `owner name`
+- You must use the packages `requests` and `sys`
+- You are not allowed to import packages other than `requests` and `sys`
+- You don’t need to check arguments passed to the script (number or type)
+
+Only 17% of applicants for a backend position at Holberton finished this task in less than 15 minutes.
+
+```
+guillaume@ubuntu:~/0x11$ ./100-github_commits.py rails rails
+3b5a6dfb18f33c373a89760c60d741f34206f23b: Jon Moss
+f785ad786ae49dd6f7a2f1d77c44ea17008c6656: Jon Moss
+bb13c37fefdc8b5699918b38eff84751c2899ad5: Rafael França
+f5d880866917724217eae9785a3ccd3f806c5aaf: Rafael França
+0da696a5e3cee87a996a020b664caa1eabd66220: Ryuta Kamizono
+24eb450d7599bab1f5863e0578a21c65ca42a915: Matthew Draper
+668f8691f1017042e238497d1a5b7b8bf1c43819: Matthew Draper
+a76f5189f6cec4b3e6d9035e2b55dcda6050dfdb: Ryuta Kamizono
+28079868d0e70bdac80c76cf806afd517edfe1e7: Rafael França
+8f0d8551893789f26e5d6b82ccef00779296818f: Rafael Mendonça França
+guillaume@ubuntu:~/0x11$ 
+```
+Be careful: only 60 requests by hour by IP for unauthenticated requests [Rate limit](https://docs.github.com/en/rest?apiVersion=2022-11-28)
+
