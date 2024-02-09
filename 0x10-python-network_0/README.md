@@ -1,22 +1,17 @@
 0x10. Python - Network #0
-=========================
 
--   By Guillaume
--   Weight: 1
+`Bash`   `Python`   `Scripting`   `Back-end`   `API`
+
+By Guillaume
 
 
-Resources
----------
+## *Resources:*
 
 **Read or watch**:
 
--   [HTTP (HyperText Transfer Protocol)](https://alx-intranet.hbtn.io/rltoken/rAon_EpQ6PGl8N0plySn4A "HTTP (HyperText Transfer Protocol)") (*except: "TRACE" Request Method, "CONNECT" Request Method, Language Negotiation and "Options MultiView" and Character Set Negotiation*)
--   [HTTP Cookies](https://alx-intranet.hbtn.io/rltoken/MhVCl_0oviQldWPn5oX-NQ "HTTP Cookies")
+- [HTTP (HyperText Transfer Protocol)](https://alx-intranet.hbtn.io/rltoken/rAon_EpQ6PGl8N0plySn4A "HTTP (HyperText Transfer Protocol)") (*except: "TRACE" Request Method, "CONNECT" Request Method, Language Negotiation and "Options MultiView" and Character Set Negotiation*)
+- [HTTP Cookies](https://alx-intranet.hbtn.io/rltoken/MhVCl_0oviQldWPn5oX-NQ "HTTP Cookies")
 
-Learning Objectives
--------------------
-
-At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/6HRdeOrrKTW2ih43ObB8tQ "explain to anyone"), **without the help of Google**:
 
 ### General
 
@@ -38,8 +33,7 @@ At the end of this project, you are expected to be able to [explain to anyone](
 -   How to make a request with cURL
 -   What happens when you type google.com in your browser (Application level)
 
-Requirements
-------------
+## *Requirements:*Bash
 
 ### General
 
@@ -60,19 +54,10 @@ Requirements
 -   All your functions (inside and outside a class) should be documented: `python3 -c 'print(__import__("my_module").my_function.__doc__)'` and `python3 -c 'print(__import__("my_module").MyClass.my_function.__doc__)'`
 -   A documentation is not a simple word, it's a real sentence explaining what's the purpose of the module, class or method (the length of it will be verified)
 
-Quiz questions
---------------
 
-Show
+## *Tasks:*
 
-Tasks
------
-
-### 0\. cURL body size
-
-mandatory
-
-Score: 0.00% (Checks completed: 0.00%)
+#### [0. cURL body size](0-body_size.sh)
 
 Write a Bash script that takes in a URL, sends a request to that URL, and displays the size of the body of the response
 
@@ -88,19 +73,7 @@ guillaume@ubuntu:~/0x10$
 
 ```
 
-**Repo:**
-
--   GitHub repository: `alx-higher_level_programming`
--   Directory: `0x10-python-network_0`
--   File: `0-body_size.sh`
-
- Done? Help Check your code Get a sandbox QA Review
-
-### 1\. cURL to the end
-
-mandatory
-
-Score: 0.00% (Checks completed: 0.00%)
+#### [1. cURL to the end](1-body.sh)
 
 Write a Bash script that takes in a URL, sends a `GET` request to the URL, and displays the body of the response
 
@@ -116,19 +89,8 @@ guillaume@ubuntu:~/0x10$
 
 ```
 
-**Repo:**
 
--   GitHub repository: `alx-higher_level_programming`
--   Directory: `0x10-python-network_0`
--   File: `1-body.sh`
-
- Done? Help Check your code Get a sandbox QA Review
-
-### 2\. cURL Method
-
-mandatory
-
-Score: 0.00% (Checks completed: 0.00%)
+#### [2. cURL Method](2-delete.sh)
 
 Write a Bash script that sends a `DELETE` request to the URL passed as the first argument and displays the body of the response
 
@@ -140,22 +102,9 @@ Please test your script in the sandbox provided, using the web server running on
 guillaume@ubuntu:~/0x10$ ./2-delete.sh 0.0.0.0:5000/route_3 ; echo ""
 I'm a DELETE request
 guillaume@ubuntu:~/0x10$
-
 ```
 
-**Repo:**
-
--   GitHub repository: `alx-higher_level_programming`
--   Directory: `0x10-python-network_0`
--   File: `2-delete.sh`
-
- Done? Help Check your code Get a sandbox QA Review
-
-### 3\. cURL only methods
-
-mandatory
-
-Score: 0.00% (Checks completed: 0.00%)
+#### [3. cURL only methods](3-methods.sh)
 
 Write a Bash script that takes in a URL and displays all HTTP methods the server will accept.
 
@@ -170,19 +119,8 @@ guillaume@ubuntu:~/0x10$
 
 ```
 
-**Repo:**
 
--   GitHub repository: `alx-higher_level_programming`
--   Directory: `0x10-python-network_0`
--   File: `3-methods.sh`
-
- Done? Help Check your code Get a sandbox QA Review
-
-### 4\. cURL headers
-
-mandatory
-
-Score: 0.00% (Checks completed: 0.00%)
+#### [4. cURL headers](4-header.sh)
 
 Write a Bash script that takes in a URL as an argument, sends a `GET` request to the URL, and displays the body of the response
 
@@ -198,19 +136,8 @@ guillaume@ubuntu:~/0x10$
 
 ```
 
-**Repo:**
 
--   GitHub repository: `alx-higher_level_programming`
--   Directory: `0x10-python-network_0`
--   File: `4-header.sh`
-
- Done? Help Check your code Get a sandbox QA Review
-
-### 5\. cURL POST parameters
-
-mandatory
-
-Score: 0.00% (Checks completed: 0.00%)
+#### [5. cURL POST parameters](5-post_params.sh)
 
 Write a Bash script that takes in a URL, sends a `POST` request to the passed URL, and displays the body of the response
 
@@ -229,19 +156,8 @@ guillaume@ubuntu:~/0x10$
 
 ```
 
-**Repo:**
 
--   GitHub repository: `alx-higher_level_programming`
--   Directory: `0x10-python-network_0`
--   File: `5-post_params.sh`
-
- Done? Help Check your code Get a sandbox QA Review
-
-### 6\. Find a peak
-
-mandatory
-
-Score: 0.00% (Checks completed: 0.00%)
+#### [6. Find a peak](6-peak.py)
 
 **Technical interview preparation**:
 
@@ -282,9 +198,3 @@ guillaume@ubuntu:~/0x10$ wc -l 6-peak.txt
 guillaume@ubuntu:~/0x10$
 
 ```
-
-**Repo:**
-
--   GitHub repository: `alx-higher_level_programming`
--   Directory: `0x10-python-network_0`
--   File: `6-peak.py, 6-peak.txt`
