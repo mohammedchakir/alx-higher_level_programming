@@ -4,6 +4,7 @@
 
 By Guillaume, CTO at Holberton School
 
+![img](https://github.com/mohammedchakir/alx-higher_level_programming/assets/129831433/2a9d3643-2425-44d1-ba41-dab5f5a0af67)
 
 ## *Resources:*
 **Read or watch**:
