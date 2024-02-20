@@ -8,7 +8,7 @@ By Guillaume, CTO at Holberton School
 ## *Resources:*
 **Read or watch**:
 
--   [Working with JSON data](https://alx-intranet.hbtn.io/rltoken/ONv-sSv-FA87Mc5rMZmO6A "Working with JSON data")
+-   [Working with JSON data](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON)
 -   [The workflow of accessing the attributes of a simply-created JSON object by Jimmy Tran from Cohort 1 - San Francisco](https://alx-intranet.hbtn.io/rltoken/zm0h7FqpQCZZpPZqxxwLxA "The workflow of accessing the attributes of a simply-created JSON object by Jimmy Tran from Cohort 1 - San Francisco")
 -   [request module](https://alx-intranet.hbtn.io/rltoken/goymbxGy-cTc5ZdKBTUcTQ "request module")
 -   [Modern JS](https://alx-intranet.hbtn.io/rltoken/j2PStAUtVPdXKwrrFxpt0g "Modern JS")
@@ -213,10 +213,10 @@ guillaume@ubuntu:~/0x14$
 
 Write a script that prints all characters of a Star Wars movie:
 
-The first argument is the Movie ID - example: `3` = “Return of the Jedi”
-Display one character name by line
-You must use the [Star wars API](https://swapi-api.alx-tools.com/)
-You must use the module `request`
+- The first argument is the Movie ID - example: `3` = “Return of the Jedi”
+- Display one character name by line
+- You must use the [Star wars API](https://swapi-api.alx-tools.com/)
+- You must use the module `request`
 
 ```
 guillaume@ubuntu:~/0x14$ ./100-starwars_characters.js 3
@@ -247,10 +247,10 @@ guillaume@ubuntu:~/0x14$
 
 Write a script that prints all characters of a Star Wars movie:
 
-The first argument is the Movie ID - example: `3` = “Return of the Jedi”
-Display one character name by line **in the same order of the list “characters” in the `/films/` response**
-You must use the [Star wars API](https://swapi-api.alx-tools.com/)
-You must use the module `request`
+- The first argument is the Movie ID - example: `3` = “Return of the Jedi”
+- Display one character name by line **in the same order of the list “characters” in the `/films/` response**
+- You must use the [Star wars API](https://swapi-api.alx-tools.com/)
+- You must use the module `request`
 
 ```
 guillaume@ubuntu:~/0x14$ ./101-starwars_characters.js 3
