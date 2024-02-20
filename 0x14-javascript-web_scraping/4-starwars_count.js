@@ -13,7 +13,8 @@ request.get(apiUrl, (error, response, body) => {
 
   const films = JSON.parse(body).results;
   const moviesWithWedgeAntilles = films.filter(film =>
-    film.characters.includes(`https://swapi-api.alx-tools.com/api/people/${characterId}/`)
+    film.characters.includes(
+      `https://swapi-api.alx-tools.com/api/people/${characterId}/`)
   );
 
   console.log(moviesWithWedgeAntilles.length);
