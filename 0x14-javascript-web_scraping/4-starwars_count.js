@@ -3,7 +3,6 @@
 const request = require('request');
 const apiUrl = process.argv[2];
 const characterId = 18;
-
 let count = 0;
 
 request.get(apiUrl, (error, response, body) => {
