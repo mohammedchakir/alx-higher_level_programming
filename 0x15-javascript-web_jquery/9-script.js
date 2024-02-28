@@ -1,12 +1,6 @@
-(document).ready(function () {
-  $.ajax({
-    url: 'https://fourtonfish.com/hellosalut/?lang=fr',
-    method: 'GET',
-    success: function (data) {
-      $('#hello').text(data.hello);
-    },
-    error: function (xhr, status, error) {
-      console.error('Error fetching translation:', error);
-    }
-  });
+$(document).ready(function () {
+  $.getJSON('https://hellosalut.stefanbohacek.dev/?lang=fr',
+    function (data) {
+      $('DIV#hello').text(data.hello);
+    });
 });
