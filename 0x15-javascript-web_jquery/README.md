@@ -1,5 +1,6 @@
 # *0x15. JavaScript - Web jQuery*
 
+`Front-end`  `JavaScript`
 
 By Guillaume, CTO at Holberton School
 
@@ -75,7 +76,7 @@ By Guillaume, CTO at Holberton School
 
 ## *Tasks:*
 
-#### [0. No JQuery]()
+#### [0. No JQuery](0-script.js)
 
 Write a JavaScript script that updates the text color of the `<header>` element to red (`#FF0000`):
 
@@ -107,7 +108,7 @@ guillaume@ubuntu:~/0x15$
 -   File: `0-script.js`
 
 
-#### [1. With JQuery]()
+#### [1. With JQuery](1-script.js)
 
 Write a JavaScript script that updates the text color of the `<header>` element to red (`#FF0000`):
 
@@ -140,7 +141,7 @@ guillaume@ubuntu:~/0x15$
 -   File: `1-script.js`
 
 
-#### [2. Click and turn red]()
+#### [2. Click and turn red](2-script.js)
 
 Write a JavaScript script that updates the text color of the `<header>` element to red (`#FF0000`) when the user clicks on the tag `DIV#red_header`:
 
@@ -175,7 +176,7 @@ guillaume@ubuntu:~/0x15$
 -   File: `2-script.js`
 
 
-#### [3. Add `.red` class]()
+#### [3. Add `.red` class](3-script.js)
 
 Write a JavaScript script that adds the class `red` to the `<header>` element when the user clicks on the tag `DIV#red_header`
 
@@ -215,7 +216,7 @@ guillaume@ubuntu:~/0x15$
 -   File: `3-script.js`
 
 
-#### [4. Toggle classes]()
+#### [4. Toggle classes](4-script.js)
 
 Write a JavaScript script that toggles the class of the `<header>` element when the user clicks on the tag `DIV#toggle_header`:
 
@@ -260,7 +261,7 @@ guillaume@ubuntu:~/0x15$
 -   File: `4-script.js`
 
 
-#### [5. List of elements]()
+#### [5. List of elements](5-script.js)
 
 Write a JavaScript script that adds a `<li>` element to a list when the user clicks on the tag `DIV#add_item`:
 
@@ -302,7 +303,7 @@ guillaume@ubuntu:~/0x15$
 -   File: `5-script.js`
 
 
-#### [6. Change the text]()
+#### [6. Change the text](6-script.js)
 
 Write a JavaScript script that updates the text of the `<header>` element to `New Header!!!` when the user clicks on `DIV#update_header`
 
@@ -339,7 +340,7 @@ guillaume@ubuntu:~/0x15$
 -   File: `6-script.js`
 
 
-#### [7. Star wars character]()
+#### [7. Star wars character](7-script.js)
 
 Write a JavaScript script that fetches the character `name` from this URL: `https://swapi-api.hbtn.io/api/people/5/?format=json`
 
@@ -377,7 +378,7 @@ guillaume@ubuntu:~/0x15$
 -   File: `7-script.js`
 
 
-#### [8. Star Wars movies]()
+#### [8. Star Wars movies](8-script.js)
 
 Write a JavaScript script that fetches and lists the `title` for all movies by using this URL: `https://swapi-api.hbtn.io/api/films/?format=json`
 
@@ -415,7 +416,7 @@ guillaume@ubuntu:~/0x15$
 
 -   File: `8-script.js`
 
-#### [9. Say Hello!]()
+#### [9. Say Hello!](9-script.js)
 
 Write a JavaScript script that fetches from `https://fourtonfish.com/hellosalut/?lang=fr` and displays the value of `hello` from that fetch in the HTML tag `DIV#hello`.
 
@@ -452,3 +453,168 @@ guillaume@ubuntu:~/0x15$
 ```
 
 -   File: `9-script.js`
+
+
+#### [10. No jQuery - document loaded](100-script.js)
+
+Write a JavaScript script that updates the text color of the `<header>` element to red (`#FF0000`):
+
+- You must use `document.querySelector` to select the HTML tag
+- You can’t use the jQuery API
+- Note: Your script must be imported from the `<head>` tag, not at the end of the HTML
+
+Please test with this HTML file in your browser:
+
+```
+guillaume@ubuntu:~/0x15$ cat 100-main.html 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Holberton School</title>
+    <script type="text/javascript" src="100-script.js"></script>
+  </head>
+  <body>
+    <header> 
+      First HTML page
+    </header>
+    <footer>
+      Holberton School - 2017
+    </footer>
+  </body>
+</html>
+guillaume@ubuntu:~/0x15$ 
+```
+
+File: 100-script.js
+ 
+#### [11. List, add, remove](101-script.js)
+
+Write a JavaScript script that adds, removes and clears `LI` elements from a list when the user clicks:
+
+- The new element must be: `<li>Item</li>`
+- The new element must be added to `UL.my_list`
+- When the user clicks on `DIV#add_item`: a new element is added to the list
+- When the user clicks on `DIV#remove_item`: the last element is removed from the list
+- When the user clicks on `DIV#clear_list`: all elements of the list are removed
+- You can’t use `document.querySelector` to select the HTML tag
+- You must use the JQuery API
+- You script must work when it imported from the `HEAD` tag
+
+Please test with this HTML file in your browser:
+
+```
+guillaume@ubuntu:~/0x15$ cat 101-main.html 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Holberton School</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="101-script.js"></script>
+  </head>
+  <body>
+    <header> 
+      First HTML page
+    </header>
+    <br />
+    <div id="add_item">Add item</div>
+    <div id="remove_item">Remove item</div>
+    <div id="clear_list">Clear list</div>
+    <br />
+    <ul class="my_list">
+      <li>Item</li>
+    </ul>
+    <footer>
+      Holberton School - 2017
+    </footer>
+  </body>
+</html>
+guillaume@ubuntu:~/0x15$ 
+```
+
+File: 101-script.js
+ 
+#### [12. Say hello to everybody!](102-script.js)
+
+Write a JavaScript script that fetches and prints how to say “Hello” depending on the language
+
+- You should use this API service: `https://www.fourtonfish.com/hellosalut/hello/`
+- The language code will be the value entered in the tag `INPUT#language_code (ex: es, fr, en etc.)`
+- The translation must be fetched when the user clicks on `INPUT#btn_translate`
+- The translation of “Hello” must be displayed in the HTML tag `DIV#hello`
+- You can’t use `document.querySelector` to select the HTML tag
+- You must use the JQuery API
+- You script must work when imported from the `<head>` tag
+
+Please test with this HTML file in your browser:
+
+```
+guillaume@ubuntu:~/0x15$ cat 102-main.html 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Holberton School</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="102-script.js"></script>
+  </head>
+  <body>
+    <header> 
+      Say Hello
+    </header>
+    <br />
+    <input id="language_code" type="text" placeholder="Language code"/>
+    <input id="btn_translate" type="button" value="Translate"/>
+    <br />
+    <div id="hello"></div>
+    <br />
+    <footer>
+      Holberton School - 2017
+    </footer>
+  </body>
+</html>
+guillaume@ubuntu:~/0x15$ 
+```
+
+File: 102-script.js
+ 
+#### [13. And press ENTER](103-script.js)
+
+Write a JavaScript script that fetches and prints how to say “Hello” depending on the language
+
+- You should use this API service: `https://www.fourtonfish.com/hellosalut/hello/`
+- The language code will be the value entered in the tag `INPUT#language_code (ex: es, fr, en etc.)`
+- The translation must be fetched when the user clicks on `INPUT#btn_translate` OR presses `ENTER` when the - focus is on `INPUT#language_code`
+- The translation of “Hello” must be displayed in the HTML tag `DIV#hello`
+- You can’t use `document.querySelector` to select the HTML tag
+- You must use the JQuery API
+- You script must work when imported from the `<head>` tag
+
+Please test with this HTML file in your browser:
+
+```
+guillaume@ubuntu:~/0x15$ cat 103-main.html 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Holberton School</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="103-script.js"></script>
+  </head>
+  <body>
+    <header> 
+      Say Hello
+    </header>
+    <br />
+    <input id="language_code" type="text" placeholder="Language code"/>
+    <input id="btn_translate" type="button" value="Translate"/>
+    <br />
+    <div id="hello"></div>
+    <br />
+    <footer>
+      Holberton School - 2017
+    </footer>
+  </body>
+</html>
+guillaume@ubuntu:~/0x15$ 
+```
+
+File: 103-script.js
